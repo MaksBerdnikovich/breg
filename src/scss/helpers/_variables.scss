@@ -1,0 +1,65 @@
+// color-variables
+$white: #ffffff;
+$black: #000000;
+$blue: #2565d3;
+$indigo: #7c3aff;
+$purple: #c428ff;
+$pink: #c1307b;
+$red: #f45757;
+$orange: #fd7e14;
+$yellow: #ffd647;
+$green: #92fb6d;
+$teal: #0bcf91;
+$cyan: #55caff;
+$gray: #bdb7ca;
+
+// theme-color-variables
+$main: #ff7e47;
+$main-100: #bd572b;
+$primary: #a2c5ff;
+$primary-100: #637a9f;
+$primary-200: #3b4c68;
+$primary-300: #2b3a4d;
+$primary-400: #314058;
+$primary-500: #2f3f55;
+$secondary: #727272;
+$secondary-100: #3a3a3a;
+$secondary-200: #808080;
+$success: $teal;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+
+// forms
+$placeholder: #808080;
+$separator: #F7F7F7;
+
+// backgrounds
+$bg-main: $primary-200;
+$bg-overlay: rgba($black, 0.8);
+$bg-scroll: $white;
+$bg-scroll-track: $primary-300;
+
+// transitions
+$transition: all .3s ease;
+
+// corners
+$corner: 15px;
+$corner-btn: 5px;
+$corner-input: 10px;
+
+// gradient
+$gradient: linear-gradient(111deg, rgba(123,201,0,1) 0%, rgba(155,214,62,1) 100%);
+$gradient-invert: linear-gradient(111deg, rgba(123,201,0,1) 100%, rgba(155,214,62,1) 0%);
+
+// shadows
+$shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.2);
+$shadow-styled: 0px 39px 92px 0px rgba(59, 19, 144, 0.1);
+$shadow-right: 7px 0px 33px 0px rgba(59, 19, 144, 0.1);
+$shadow-bottom: 0px 20px 40px -8px rgba(0, 0, 0, 0.2);
+
+$shadow-text: -0 -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, -0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF, -1px -0 0 #FFFFFF,
+1px -0 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF,
+1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+
+$dots-leader: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ';

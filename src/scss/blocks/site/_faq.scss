@@ -1,0 +1,132 @@
+.faq{
+    position: relative;
+}
+
+.faq__tabs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__tabs-nav{
+    position: relative;
+
+    ul{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -5px;
+
+        @include media-sm{
+            flex-direction: column;
+        }
+    }
+
+    li{
+        flex: 1;
+        padding: 0 5px;
+    }
+
+    li + li {
+        @include media-sm{
+            margin-top: 10px;
+        }
+    }
+
+    a{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 70px;
+        padding: 10px;
+        background-color: $primary-300;
+        border-top-left-radius: $corner;
+        border-top-right-radius: $corner;
+
+        @include media-sm{
+            border-radius: 0;
+        }
+    }
+
+    a.active{
+        background-color: $main;
+        opacity: 1;
+    }
+}
+
+.faq__tabs-body{
+    position: relative;
+}
+
+.faq__accordion{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__accordion-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-300;
+    margin-top: 10px;
+    border-radius: $corner;
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.faq__accordion-title{
+    position: relative;
+
+    a{
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 70px;
+        padding: 10px 30px;
+        background-color: $primary-300;
+        border-radius: $corner;
+
+        @include media-sm{
+            border-radius: 0;
+            padding: 5px 15px;
+        }
+    }
+
+    i{
+        margin-right: 30px;
+        font-size: 38px;
+        color: $main;
+
+        @include media-sm{
+            margin-right: 15px;
+        }
+    }
+
+    a.active{
+        background-color: $main;
+        opacity: 1;
+    }
+
+    a.active i{
+        color: $white;
+    }
+}
+
+.faq__accordion-body{
+    position: relative;
+    padding: 35px 50px;
+
+    @include media-sm{
+        padding: 30px 15px;
+    }
+
+    p{
+        color: $primary;
+    }
+}

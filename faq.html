@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREG</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="BREG">
+    <meta property="og:site_name" content="BREG">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body class="template">
+
+<main class="main-content">
+    <section class="sidebar" data-menu-nav>
+        <div class="sidebar__wrap">
+            <div class="sidebar__logo">
+                <a href="/"><img src="dist/images/logo/logo.svg" width="275" height="72" alt="logo"></a>
+            </div>
+
+            <div class="sidebar__menu-toggle" data-menu-toggle><i class="icon-hamburger2"></i></div>
+
+            <div class="sidebar__nav">
+                <ul>
+                    <li><a href="index.html">Домой</a></li>
+                    <li><a href="invest.html">Покупка</a></li>
+                    <li><a href="partners.html">Сотрудничество</a></li>
+                    <li><a href="about.html">О Компании</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__menu-toggle" data-menu-toggle><i class="icon-hamburger1"></i></div>
+
+                <div class="header__logo">
+                    <a href="/"><img src="dist/images/logo/logo.svg" width="275" height="72" alt="logo"></a>
+                </div>
+                <div class="header__login">
+                    <a href="login.html" class="btn btn--primary btn--medium">
+                        <i class="icon-login"></i> <span>Войти</span>
+                    </a>
+                </div>
+                <div class="header__lang">
+                    <div class="language">
+                        <a href="javascript:void(0)" class="language__current" data-dropdown-toggle>
+                            <img src="dist/images/flags/1.png" alt="Ru"> <span>Ru</span> <i class="icon-lang-arrow"></i>
+                        </a>
+                        <ul class="language__list" data-dropdown>
+                            <li><a href="#"><i><img src="dist/images/flags/2.png" alt="En"></i> <span>En</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/3.png" alt="Es"></i> <span>Es</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/4.png" alt="Fr"></i> <span>Fr</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/5.png" alt="Po"></i> <span>Po</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/6.png" alt="It"></i> <span>It</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/7.png" alt="Hi"></i> <span>Hi</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="site-section hero" style="background-image: url('dist/images/hero/faq.jpg')">
+            <div class="hero__title">
+                <h1 class="title-xlarge">вопрос - <span class="tx-main">ответ</span></h1>
+            </div>
+
+            <div class="hero__socials">
+                <div class="socials">
+                    <ul class="socials__list">
+                        <li><a href="#"><i class="icon-telegram-plane"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="icon-telegram-plane"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section faq">
+            <div class="faq__tabs" data-tab>
+                <div class="faq__tabs-nav">
+                    <ul>
+                        <li><a href="#tab1" data-tab-nav><span class="title-h6">общие вопросы</span></a></li>
+                        <li><a href="#tab2" data-tab-nav><span class="title-h6">общие вопросы</span></a></li>
+                        <li><a href="#tab3" data-tab-nav><span class="title-h6">общие вопросы</span></a></li>
+                        <li><a href="#tab4" data-tab-nav><span class="title-h6">общие вопросы</span></a></li>
+                    </ul>
+                </div>
+                <div id="tab1" class="faq__tabs-body" data-tab-body>
+                    <div class="faq__accordion">
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc1" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">How does the affiliate program work?</span>
+                                </a>
+                            </div>
+                            <div id="acc1" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc2" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">How many referral links can i have?</span>
+                                </a>
+                            </div>
+                            <div id="acc2" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc3" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6"> What are the advantages of the affiliate program?</span>
+                                </a>
+                            </div>
+                            <div id="acc3" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc4" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">Can i withdraw my income that i got from taking part in the affiliate program?</span>
+                                </a>
+                            </div>
+                            <div id="acc4" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc5" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">How will i get my referral commission?</span>
+                                </a>
+                            </div>
+                            <div id="acc5" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="faq__tabs-body" data-tab-body>
+                    <div class="faq__accordion">
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc6" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">Will i get my referral bonus for every additional deposit my referrals make?</span>
+                                </a>
+                            </div>
+                            <div id="acc6" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc7" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">Will i get a referral fee for the deposit made by my referral from balance?</span>
+                                </a>
+                            </div>
+                            <div id="acc7" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc8" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">What are the ways of referrals attracting?</span>
+                                </a>
+                            </div>
+                            <div id="acc8" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="faq__tabs-body" data-tab-body>
+                    <div class="faq__accordion">
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc9" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">Will i get my referral bonus for every additional deposit my referrals make?</span>
+                                </a>
+                            </div>
+                            <div id="acc9" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc10" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">Will i get a referral fee for the deposit made by my referral from balance?</span>
+                                </a>
+                            </div>
+                            <div id="acc10" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="faq__tabs-body" data-tab-body>
+                    <div class="faq__accordion">
+                        <div class="faq__accordion-item">
+                            <div class="faq__accordion-title">
+                                <a href="#acc11" data-acc-nav>
+                                    <i class="icon-question1"></i>
+                                    <span class="title-h6">Will i get my referral bonus for every additional deposit my referrals make?</span>
+                                </a>
+                            </div>
+                            <div id="acc11" class="faq__accordion-body" data-acc-body>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
+                                    mauris odio, eget scelerisque eros laoreet id. Quisque finibus augue a purus
+                                    auctor, vitae pulvinar ante feugiat. Duis sagittis facilisis ligula eget
+                                    elementum. Sed vel varius libero, sed ornare ipsumlobortis erat vitae velit
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section section--aside request" style="background-image: url('dist/images/bg/request.jpg')">
+            <div class="request__wrap">
+                <div class="request__block block--info">
+                    <div class="page-title title--start">
+                        <h2>не нашли <span class="tx-primary">ответ?</span></h2>
+                    </div>
+                    <div class="page-text mt-35">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                            ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae
+                        </p>
+                    </div>
+                </div>
+                <div class="request__block block--form">
+                    <form id="requestForm" class="form" action="?" method="post">
+                        <div class="form-col form-col--50">
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <input type="text" name="name" required>
+                                    <label>Имя</label>
+                                    <span class="highlight"></span>
+                                </div>
+                                <div class="error-msg">Enter valid name</div>
+                            </div>
+                        </div>
+
+                        <div class="form-col form-col--50">
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <input type="text" name="email" required>
+                                    <label>E-mail</label>
+                                    <span class="highlight"></span>
+                                </div>
+                                <div class="error-msg">Enter valid email</div>
+                            </div>
+                        </div>
+
+                        <div class="form-col form-col--100">
+                            <div class="form-line">
+                                <div class="input-group">
+                                    <textarea name="message" placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="error-msg">Enter valid message</div>
+                            </div>
+                        </div>
+
+                        <div class="form-col form-col--50">
+                            <div class="form-line">
+                                <div class="input-group captcha">
+                                    <input type="text" name="captcha" required>
+                                    <label>Код с картинки</label>
+                                    <span class="highlight"></span>
+                                    <img src="dist/images/captcha.png" alt="captcha">
+                                </div>
+                                <div class="error-msg">Enter valid captcha</div>
+                            </div>
+                        </div>
+
+                        <div class="form-col form-col--50">
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn--main btn--large">
+                                    <span>отправить сообщение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section section--aside payments">
+            <div class="page-title title--center">
+                <h2>платежные <span class="tx-primary">системы</span></h2>
+            </div>
+
+            <div class="payments__list">
+                <ul>
+                    <li><a href="#"><i class="icon-litecoin"></i></a></li>
+                    <li><a href="#"><i class="icon-bitcoin"></i></a></li>
+                    <li><a href="#"><i class="icon-ripple"></i></a></li>
+                    <li><a href="#"><i class="icon-ethereum"></i></a></li>
+                    <li><a href="#"><i class="icon-tether-trc20"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="site-section section--aside companies">
+            <div class="page-title title--center">
+                <h2>Партнеры нашей <span class="tx-primary">компании</span></h2>
+            </div>
+
+            <div class="companies__list">
+                <ul>
+                    <li><a href="#"><img src="dist/images/companies/1.png" alt="company1"></a></li>
+                    <li><a href="#"><img src="dist/images/companies/2.png" alt="company2"></a></li>
+                    <li><a href="#"><img src="dist/images/companies/3.png" alt="company3"></a></li>
+                    <li><a href="#"><img src="dist/images/companies/4.png" alt="company4"></a></li>
+                    <li><a href="#"><img src="dist/images/companies/5.png" alt="company5"></a></li>
+                    <li><a href="#"><img src="dist/images/companies/6.png" alt="company6"></a></li>
+                    <li><a href="#"><img src="dist/images/companies/7.png" alt="company7"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__start">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html" class="active">Домой</a></li>
+                            <li><a href="invest.html">Покупка</a></li>
+                            <li><a href="partners.html">Сотрудничество</a></li>
+                            <li><a href="about.html">О Компании</a></li>
+                        </ul>
+                        <ul class="footer__nav-list">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contacts.html">контакты</a></li>
+                            <li><a href="terms-of-use.html">пользовательское соглашение</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__logo">
+                        <a href="/"><img src="dist/images/logo/logo-footer.svg" width="275" height="72" alt="logo"></a>
+                    </div>
+
+                    <div class="footer__login">
+                        <a href="login.html" class="btn btn--primary btn--medium">
+                            <i class="icon-login"></i> <span>Войти</span>
+                        </a>
+                    </div>
+
+                    <div class="footer__lang">
+                        <div class="language">
+                            <a href="javascript:void(0)" class="language__current" data-dropdown-toggle>
+                                <img src="dist/images/flags/1.png" alt="Ru"> <span>Ru</span> <i class="icon-lang-arrow"></i>
+                            </a>
+                            <ul class="language__list" data-dropdown>
+                                <li><a href="#"><i><img src="dist/images/flags/2.png" alt="En"></i> <span>En</span></a></li>
+                                <li><a href="#"><i><img src="dist/images/flags/3.png" alt="Es"></i> <span>Es</span></a></li>
+                                <li><a href="#"><i><img src="dist/images/flags/4.png" alt="Fr"></i> <span>Fr</span></a></li>
+                                <li><a href="#"><i><img src="dist/images/flags/5.png" alt="Po"></i> <span>Po</span></a></li>
+                                <li><a href="#"><i><img src="dist/images/flags/6.png" alt="It"></i> <span>It</span></a></li>
+                                <li><a href="#"><i><img src="dist/images/flags/7.png" alt="Hi"></i> <span>Hi</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__socials">
+                    <div class="socials">
+                        <ul class="socials__list">
+                            <li><a href="#"><i class="icon-telegram-plane"></i> <span>baxesrealestateg@gmail.com</span></a></li>
+                            <li><a href="#"><i class="icon-facebook-f"></i> <span>baxesrealestateg@gmail.com</span></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i> <span>baxesrealestateg@gmail.com</span></a></li>
+                            <li><a href="#"><i class="icon-youtube"></i> <span>baxesrealestateg@gmail.com</span></a></li>
+                            <li><a href="#"><i class="icon-telegram-plane"></i> <span>baxesrealestateg@gmail.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__texts">
+                    <ul>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__copy">
+                    <p>"Baxess Real Estate Group" all rights reserved © 2023</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+<script>
+    const $form = $('#requestForm');
+    const $name = $('input[name="name"]');
+    const $email = $('input[name="email"]');
+    const $message = $('textarea[name="message"]');
+    const $captcha = $('input[name="captcha"]');
+
+    let required = false;
+    const error = ($el) => {
+        required = false;
+        $el.parents('.form-line').addClass('error');
+    }
+    const valid = ($el) => {
+        required = true;
+        $el.parents('.form-line').removeClass('error');
+    }
+
+    $form.on('click', 'button', (e) => {
+        e.preventDefault()
+
+        // check name
+        validator.isEmpty($name.val()) ? error($name) : valid($name);
+
+        // check email
+        !validator.isEmail($email.val()) ? error($email) : valid($email);
+
+        // check message
+        validator.isEmpty($message.val()) ? error($message) : valid($message);
+
+        // check captcha
+        validator.isEmpty($captcha.val()) ? error($captcha) : valid($captcha);
+
+        if (required) return true;
+
+        return false;
+    })
+</script>
+
+</body>
+</html>

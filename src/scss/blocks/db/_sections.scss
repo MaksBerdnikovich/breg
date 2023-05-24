@@ -1,0 +1,25 @@
+.db-section{
+    position: relative;
+}
+
+.db-section__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.db-section__block{
+    position: relative;
+    width: 50%;
+    padding: 0 5px;
+    margin-top: 10px;
+
+    &.block--100{
+        width: 100%;
+    }
+
+    @include media-md{
+        width: 100%;
+    }
+}

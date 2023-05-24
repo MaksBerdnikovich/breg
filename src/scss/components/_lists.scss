@@ -1,0 +1,29 @@
+.styled-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    li{
+        position: relative;
+        padding-left: 25px;
+    }
+
+    li:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: $primary;
+    }
+
+    &.list--main li:before{
+        background-color: $main;
+    }
+
+    li + li {
+        margin-top: 15px;
+    }
+}

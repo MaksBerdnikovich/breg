@@ -1,0 +1,75 @@
+.statistics{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.statistics .carousel__slide{
+    max-width: 170px;
+    padding: 0 !important;
+    margin-right: 10px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.statistics__item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 240px;
+    border-radius: $corner;
+    background-color: $primary-300;
+    overflow: hidden;
+}
+
+.statistics__icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    background-color: rgba($primary-200, 0.5);
+
+    i{
+        font-size: 30px;
+        color: $primary-100;
+    }
+
+    i.icon-bitcoin{
+        font-size: 24px;
+    }
+
+    i.icon-ethereum,
+    i.icon-bitcoincash{
+        font-size: 34px;
+    }
+}
+
+.statistics__list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 170px;
+
+    ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    span.tx-primary-100{
+        color: $primary-100;
+    }
+}

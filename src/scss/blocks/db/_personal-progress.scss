@@ -1,0 +1,281 @@
+.progress{
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.progress-step{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .page-title{
+        margin-bottom: 20px;
+
+        @include media-sm{
+            margin: 0 auto 20px auto;
+
+            &:after{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    @include media-md{
+        flex-direction: column;
+    }
+
+    @include media-sm{
+        background-color: $primary-300;
+    }
+}
+
+.progress-step__start,
+.progress-step__end{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 713px;
+    height: 318px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: $corner;
+
+    @include media-lgx{
+        width: calc(50% - 50px);
+    }
+
+    @include media-mdx{
+        padding: 30px 15px;
+    }
+
+    @include media-md{
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @include media-sm{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 0;
+    }
+}
+
+.progress-step__end{
+    background-position: top left;
+    align-items: flex-end;
+    text-align: left;
+
+    @include media-md{
+        background-position: center center;
+    }
+
+    @include media-sm{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .progress-step__info{
+        max-width: 300px;
+
+        @include media-xs{
+            max-width: 100%;
+        }
+    }
+}
+
+.progress-step__center{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @include media-md{
+        position: relative;
+        padding-bottom: 30px;
+    }
+}
+
+.progress-step__icon{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+        font-size: 40px;
+        color: #ff7e47;
+    }
+}
+
+.progress-step__timer{
+    position: relative;
+    margin: auto;
+    align-self: center;
+
+    .timer li{
+        display: inline-flex;
+
+        b{
+            font-weight: 500;
+        }
+
+        span{
+            width: auto;
+            margin-right: 5px;
+        }
+    }
+
+    .title-h6{
+        text-transform: none;
+    }
+}
+
+.progress-step__btn{
+    margin-top: auto;
+
+    .btn{
+        margin-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn span{
+        font-size: 12px;
+    }
+}
+
+.progress-step__info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-step__info-item{
+    position: relative;
+
+    .timer {
+        display: inline-flex;
+
+        li{
+            margin-right: 0;
+        }
+
+        .sep{
+            padding: 0 5px;
+        }
+
+        span{
+            width: auto;
+        }
+    }
+
+    span{
+        text-transform: none;
+    }
+}
+
+.progress-step-final{
+    position: relative;
+    min-height: 318px;
+    width: 100%;
+    border-radius: $corner;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @include media-md{
+        background-color: $primary-300;
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.progress-step-final__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+}
+
+.progress-step-final__wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-md{
+        flex-direction: column;
+    }
+
+    .progress-step__start,
+    .progress-step__end{
+        width: auto;
+        padding: 0 30px;
+        height: auto;
+        min-height: 228px;
+
+        @include media-mdx{
+            padding: 0 15px;
+            order: 1;
+        }
+
+        @include media-md{
+            text-align: center;
+            justify-content: center;
+            min-height: auto;
+            margin-top: 30px;
+        }
+    }
+
+    .progress-step__end{
+        @include media-md{
+            height: auto;
+        }
+    }
+
+    .progress-step__end .progress-step__info{
+        @include media-md{
+            max-width: 100%;
+        }
+    }
+
+    .progress-step__center{
+        @include media-md{
+            order: 0;
+            position: relative;
+        }
+    }
+
+    .progressbar{
+        @include media-md{
+            margin: 0 auto;
+        }
+    }
+}
+
+.progress-step__final-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+
+    @include media-md{
+       // padding-top: 0;
+    }
+}

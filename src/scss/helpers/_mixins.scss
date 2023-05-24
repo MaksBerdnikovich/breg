@@ -1,0 +1,308 @@
+// Media
+@mixin media-screen-large {
+    @media only screen and (min-width: 1920px){
+        @content;
+    }
+}
+
+@mixin media-lgx {
+    @media only screen and (max-width: 1599px){
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media only screen and (max-width: 1399px){
+        @content;
+    }
+}
+
+@mixin media-mdx {
+    @media only screen and (max-width: 1199px){
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media only screen and (max-width: 991px){
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media only screen and (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin media-xs {
+    @media only screen and (max-width: 479px){
+        @content;
+    }
+}
+
+
+// Font Second
+@mixin font-second($size, $weight, $transform: uppercase){
+    font-family: 'Magistral';
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $transform;
+}
+
+
+// Font Icons
+@mixin font-icons($icon, $size){
+    font-family: 'icons' !important;
+    content: $icon !important;
+    font-size: $size !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+
+// Divider
+@mixin divider($position: center, $color: $main, $width: 55px, $height: 3px) {
+    position: relative;
+    padding-bottom: 5px;
+
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: $width;
+        height: $height;
+        background-color: $color;
+
+        @if $position == start {
+            left: 0;
+        }
+
+        @if $position == center {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @if $position == end {
+            right: 0;
+        }
+    }
+}
+
+
+// Background Image
+@mixin bg-image($path, $color: $bg-main) {
+    background-color: $color;
+    background-image: url("../images/#{$path}");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+// Ellipsis
+@mixin ellipsis() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Dots Leader
+@mixin dots-leader($color: inherit) {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: $dots-leader;
+        color: $color;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+// Scale
+@mixin scale-horizontal() {
+    transform: scale(-1, 1);
+}
+
+@mixin scale-vertical() {
+    transform: scale(1, -1);
+}
+
+// Gradients
+@mixin gradient($color1: $purple, $color2: $indigo, $position: right) {
+    &{
+        background-image: linear-gradient(to $position, $color1 0%, $color2 78%);
+    }
+}
+
+@mixin gradient-text($color1: $purple, $position1: 0%, $color2: $indigo, $position2: 100%, $direction: 90deg) {
+    &{
+        background: $color1;
+        background: linear-gradient($direction, $color1 $position1, $color2 $position2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@mixin gradient-border($color1: $purple, $color2: $indigo, $size: 2px, $radius: 50%) {
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        padding: $size;
+        border-radius: $radius;
+        background: linear-gradient(0deg, $color1 0%, $color2 100%);
+        -webkit-mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 0;
+    }
+
+    & > * {
+        z-index: 1;
+    }
+}
+
+// Border radius
+@mixin border-radius($l-top: $corner, $r-top: $corner, $l-bottom: $corner, $r-bottom: $corner){
+    border-top-left-radius: $l-top;
+    border-top-right-radius: $r-top;
+    border-bottom-left-radius: $l-bottom;
+    border-bottom-right-radius: $r-bottom;
+}
+
+// Shadow Animate
+@mixin shadow-animate($color1: #37117b, $color2: #b025f0) {
+
+    &:before{
+        content: attr(data-shadow);
+        position: absolute;
+        text-shadow: .03em .03em 0 $color1;
+        top: -.01em;
+        left: -.01em;
+        z-index: 1;
+    }
+
+    &:after {
+        content: attr(data-shadow);
+        position: absolute;
+        top: .06em;
+        left: .06em;
+        text-shadow: none;
+        background-image: linear-gradient(45deg, transparent 45%, $color2 45%, $color2 55%, transparent 0);
+        background-size: .05em .05em;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        animation: shadow 15s linear infinite;
+    }
+}
+
+// Triangles
+@mixin triangle-left($color, $size: 12px) {
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: -#{$size};
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size $size $size 0;
+        border-color: transparent $color transparent transparent;
+    }
+}
+
+@mixin triangle-right($color, $size: 12px) {
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        right: -#{$size};
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size 0 $size $size;
+        border-color: transparent transparent transparent $color;
+    }
+}
+
+@mixin triangle-bottom($color, $size: 12px) {
+    //position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -#{$size - 2px};
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size $size 0 $size;
+        border-color: $color transparent transparent transparent;
+    }
+}
+
+@mixin triangle-top($color, $size: 12px) {
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -#{$size - 2px};
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 $size $size $size;
+        border-color: transparent transparent $color transparent;
+    }
+}
+
+// Scrollbar
+@mixin scrollbar($size: 10px, $foreground-color: $bg-scroll, $background-color: $bg-scroll-track) {
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+        border-radius: $size;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+        border-radius: $size;
+    }
+}
+
+// Placeholder
+@mixin placeholder($color: $placeholder) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+}

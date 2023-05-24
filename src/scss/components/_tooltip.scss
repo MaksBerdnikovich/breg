@@ -1,0 +1,20 @@
+.tooltip {
+    top: 5px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    min-height: 20px;
+    line-height: 20px;
+    width: auto;
+
+    font-family: 'Mont';
+    font-size: 12px !important;
+    font-weight: 700;
+    color: #b625f0;
+    border-radius: $corner;
+    background-color: $white;
+
+    @include triangle-bottom($white, 6px);
+}

@@ -1,0 +1,31 @@
+.last-operations{
+    position: relative;
+    height: 100%;
+    padding: 25px 10px;
+    background-color: $primary-300;
+    border-radius: $corner;
+    overflow: hidden;
+
+    .page-title{
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.last-operations__table{
+    position: relative;
+    width: 100%;
+
+    @include media-sm{
+        overflow-x: auto;
+        @include scrollbar(2px);
+    }
+
+    table{
+        min-width: 600px;
+    }
+}

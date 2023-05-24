@@ -1,0 +1,242 @@
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    margin-top: 10px;
+    padding: 70px 50px 40px 50px;
+    border-radius: $corner;
+
+    @include bg-image('bg/footer.jpg');
+
+    @include media-lg{
+        padding: 30px;
+    }
+
+    @include media-md{
+        padding: 30px 15px;
+    }
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.footer__wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__start {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    position: relative;
+    max-width: 500px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+
+    @include media-md{
+        margin: 0 -10px;
+        max-width: 450px;
+    }
+}
+
+.footer__nav-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 20px;
+
+    @include media-md{
+        padding: 0 10px;
+    }
+
+    @include media-xs{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    li + li{
+        margin-top: 15px;
+    }
+
+    a{
+        position: relative;
+        display: inline-flex;
+        align-items: flex-start;
+        padding-left: 20px;
+
+        @include font-second(16px, 500);
+        color: $white;
+
+        @include media-sm{
+            font-size: 13px;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 11px;
+            height: 11px;
+            background-color: $primary;
+            border-radius: 50%;
+
+            @include media-sm{
+                top: 3px;
+            }
+        }
+    }
+
+    a:hover,
+    a.active{
+        color: $primary;
+        opacity: 1;
+    }
+}
+
+.footer__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-lg{
+        margin-left: 70px;
+    }
+
+    @include media-mdx{
+        position: relative;
+        left: auto;
+        transform: none;
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+        order: 5;
+        text-align: center;
+    }
+
+    a{
+        display: block;
+    }
+}
+
+.footer__login {
+    position: relative;
+    margin-left: auto;
+    margin-right: 150px;
+
+    @include media-lg{
+        margin-right: 40px;
+    }
+
+    @include media-md{
+        margin-right: 15px;
+    }
+
+    @include media-sm{
+        margin: 30px auto 0 auto;
+    }
+
+    .btn{
+        min-width: 170px;
+
+        @include media-md{
+            min-width: auto;
+        }
+    }
+}
+
+.footer__lang {
+    position: relative;
+    z-index: 10;
+
+    @include media-sm{
+        display: none;
+    }
+}
+
+.footer__socials {
+    position: relative;
+    margin-top: 50px;
+
+    @include media-mdx{
+        margin-top: 15px;
+    }
+
+    .socials__list{
+        justify-content: space-between;
+        margin: 0 -15px;
+
+        @include media-mdx{
+            justify-content: center;
+        }
+    }
+
+    .socials__list li{
+        margin-top: 15px;
+        padding: 15px;
+
+        @include media-sm{
+            margin-top: 0;
+        }
+    }
+}
+
+.footer__texts {
+    position: relative;
+    margin-top: 50px;
+
+    @include media-mdx{
+        margin-top: 15px;
+    }
+
+    @include media-sm{
+        margin-top: 0;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -50px;
+
+        @include media-lg{
+            margin: 0 -5px;
+        }
+    }
+
+    li{
+        width: 50%;
+        padding: 0 50px;
+        margin-top: 30px;
+
+        @include media-lg{
+            padding: 0 5px;
+        }
+
+        @include media-sm{
+            width: 100%;
+        }
+    }
+
+    p{
+        color: $primary;
+    }
+}
+
+.footer__copy {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}

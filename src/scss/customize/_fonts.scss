@@ -1,0 +1,335 @@
+// Primary font
+$font-family-base: 'Gilroy';
+
+@mixin font-face($url, $weight){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/Gilroy/#{$url}.woff") format('woff'),
+        url("../fonts/Gilroy/#{$url}.woff2") format("woff2");
+
+        font-family: 'Gilroy';
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+@include font-face('Gilroy-Thin', 100);
+@include font-face('Gilroy-UltraLight', 200);
+@include font-face('Gilroy-Light', 300);
+@include font-face('Gilroy-Regular', 400);
+@include font-face('Gilroy-Medium', 500);
+@include font-face('Gilroy-Semibold', 600);
+@include font-face('Gilroy-Bold', 700);
+@include font-face('Gilroy-Extrabold', 800);
+@include font-face('Gilroy-Black', 900);
+
+// Secondary font
+@mixin font-face-second($url, $weight){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/Magistral/#{$url}.woff") format('woff'),
+        url("../fonts/Magistral/#{$url}.woff2") format("woff2");
+
+        font-family: 'Magistral';
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+@include font-face-second('Magistral-Light', 300);
+@include font-face-second('Magistral-Medium', 500);
+@include font-face-second('Magistral-Book', 600);
+@include font-face-second('Magistral-Bold', 700);
+@include font-face-second('Magistral-Extrabold', 800);
+
+
+// Icons
+@mixin font-face-icons($url){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/Icons/#{$url}.ttf") format('ttf'),
+        url("../fonts/Icons/#{$url}.woff") format('woff'),
+        url("../fonts/Icons/#{$url}.svg") format("svg");
+
+        font-family: 'icons';
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+}
+@include font-face-icons('icons');
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+    content: "\e900";
+}
+.icon-lang-arrow:before {
+    content: "\e901";
+}
+.icon-input-arrow-down:before {
+    content: "\e902";
+}
+.icon-input-arrow-up:before {
+    content: "\e903";
+}
+.icon-youtube:before {
+    content: "\e904";
+}
+.icon-slid-arrow-left2:before {
+    content: "\e905";
+}
+.icon-check:before {
+    content: "\e906";
+}
+.icon-hamburger1:before {
+    content: "\e907";
+}
+.icon-slid-arrow-right:before {
+    content: "\e908";
+}
+.icon-slid-arrow-left:before {
+    content: "\e909";
+}
+.icon-mini-eth:before {
+    content: "\e90a";
+}
+.icon-hamburger2:before {
+    content: "\e90b";
+}
+.icon-menu-1:before {
+    content: "\e90c";
+}
+.icon-ttle1:before {
+    content: "\e90d";
+}
+.icon-time:before {
+    content: "\e90e";
+}
+.icon-soc-fb-grey:before {
+    content: "\e90f";
+}
+.icon-soc-fb:before {
+    content: "\e910";
+}
+.icon-menu-6:before {
+    content: "\e911";
+}
+.icon-login:before {
+    content: "\e912";
+}
+.icon-ttle6:before {
+    content: "\e913";
+}
+.icon-menu-3:before {
+    content: "\e914";
+}
+.icon-ttle3:before {
+    content: "\e915";
+}
+.icon-avatar:before {
+    content: "\e916";
+}
+.icon-forarrows:before {
+    content: "\e917";
+}
+.icon-sound-off:before {
+    content: "\e918";
+}
+.icon-menu-2:before {
+    content: "\e919";
+}
+.icon-status:before {
+    content: "\e91a";
+}
+.icon-ttle2:before {
+    content: "\e91b";
+}
+.icon-soc-tg-grey:before {
+    content: "\e91c";
+}
+.icon-soc-tg:before {
+    content: "\e91d";
+}
+.icon-mini-doge:before {
+    content: "\e91e";
+}
+.icon-sponsor:before {
+    content: "\e91f";
+}
+.icon-menu-12:before {
+    content: "\e920";
+}
+.icon-menu-4:before {
+    content: "\e921";
+}
+.icon-mini-erc20:before {
+    content: "\e922";
+}
+.icon-i:before {
+    content: "\e923";
+}
+.icon-menu-9:before {
+    content: "\e924";
+}
+.icon-ttle4:before {
+    content: "\e925";
+}
+.icon-mail:before {
+    content: "\e926";
+}
+.icon-ip:before {
+    content: "\e927";
+}
+.icon-ttle9:before {
+    content: "\e928";
+}
+.icon-mini-rip:before {
+    content: "\e929";
+}
+.icon-sound-on:before {
+    content: "\e92a";
+}
+.icon-menu-5:before {
+    content: "\e92b";
+}
+.icon-menu-7:before {
+    content: "\e92c";
+}
+.icon-mini-ltc:before {
+    content: "\e92d";
+}
+.icon-ttle7:before {
+    content: "\e92e";
+}
+.icon-ttle5:before {
+    content: "\e92f";
+}
+.icon-location:before {
+    content: "\e930";
+}
+.icon-time2:before {
+    content: "\e931";
+}
+.icon-menu-10:before {
+    content: "\e932";
+}
+.icon-ttle10:before {
+    content: "\e933";
+}
+.icon-mini-btc:before {
+    content: "\e934";
+}
+.icon-link:before {
+    content: "\e935";
+}
+.icon-soc-tg2-grey:before {
+    content: "\e936";
+}
+.icon-soc-tg2:before {
+    content: "\e937";
+}
+.icon-question2:before {
+    content: "\e938";
+}
+.icon-password-page:before {
+    content: "\e939";
+}
+.icon-question1:before {
+    content: "\e93a";
+}
+.icon-soc-yt-grey:before {
+    content: "\e93b";
+}
+.icon-soc-inst-grey:before {
+    content: "\e93c";
+}
+.icon-soc-yt:before {
+    content: "\e93d";
+}
+.icon-soc-inst:before {
+    content: "\e93e";
+}
+.icon-ripple:before {
+    content: "\e93f";
+}
+.icon-mini-trx:before {
+    content: "\e940";
+}
+.icon-mini-trc20:before {
+    content: "\e941";
+}
+.icon-tether-erc20:before {
+    content: "\e942";
+}
+.icon-ethereum:before {
+    content: "\e943";
+}
+.icon-tron:before {
+    content: "\e944";
+}
+.icon-ttle11:before {
+    content: "\e945";
+}
+.icon-menu-8:before {
+    content: "\e946";
+}
+.icon-menu-11:before {
+    content: "\e947";
+}
+.icon-selfie:before {
+    content: "\e948";
+}
+.icon-ttle8:before {
+    content: "\e949";
+}
+.icon-litecoin:before {
+    content: "\e94a";
+}
+.icon-mini-btc-cash:before {
+    content: "\e94b";
+}
+.icon-dogecoin:before {
+    content: "\e94c";
+}
+.icon-tether-trc20:before {
+    content: "\e94d";
+}
+.icon-bitcoin:before {
+    content: "\e94e";
+}
+.icon-bitcoincash:before {
+    content: "\e94f";
+}
+.icon-slid-arrow-right2:before {
+    content: "\e950";
+}
+.icon-envelope:before {
+    content: "\e951";
+}
+.icon-youtube1:before {
+    content: "\f167";
+}
+.icon-instagram:before {
+    content: "\f16d";
+}
+.icon-facebook-f:before {
+    content: "\f39e";
+}
+.icon-telegram-plane:before {
+    content: "\f3fe";
+}
+.icon-headset:before {
+    content: "\f590";
+}

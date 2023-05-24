@@ -1,0 +1,125 @@
+table.db-table {
+    position: relative;
+    width: 100%;
+
+    table-layout: fixed;
+    border-spacing: 2px;
+}
+
+table.db-table th,
+table.db-table td{
+    position: relative;
+    height: 45px;
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px 15px;
+    background-color: $primary-500;
+    line-height: 1;
+
+    @include font-second(13px, 500);
+
+    &.th--eps,
+    &.td--eps{
+        width: 50px;
+        text-align: center;
+        padding: 0;
+
+        & > i{
+            font-size: 20px;
+            color: $primary-100;
+        }
+    }
+
+    &.th--id,
+    &.td--id,
+    &.th--line,
+    &.td--line{
+        width: 80px;
+        text-align: center;
+    }
+
+    &.th--comment,
+    &.td--comment {
+        width: 280px;
+    }
+
+    &.th--shares,
+    &.td--shares {
+        width: 170px;
+    }
+
+    &.td--comment {
+        font-family: $font-family-base;
+        text-transform: none;
+    }
+}
+
+table.db-table th{
+    color: $primary;
+    background-color: $primary-200;
+}
+
+table.db-table{
+    [data-infobox-trigger] {
+        cursor: pointer;
+    }
+
+    [data-infobox-trigger]:hover ~ [data-infobox] {
+        display: block;
+    }
+}
+
+table.db-table .infobox{
+    display: none;
+    position: absolute;
+    right: -10px;
+    min-height: 220px;
+    top: -230px;
+    padding: 20px;
+    background-color: $primary;
+    border-radius: $corner-input;
+
+    @include triangle-bottom($primary, 10px);
+
+    @include media-mdx{
+        display: none !important;
+    }
+
+    &.active{
+        display: block;
+    }
+
+    &:after {
+        left: auto;
+        right: 25px;
+        transform: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        font-family: $font-family-base;
+        text-transform: none;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    li + li{
+        margin-top: 10px;
+    }
+
+    span{
+        color: $primary-100;
+    }
+
+    a, b{
+        color: $primary-300;
+    }
+}

@@ -1,0 +1,102 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &.nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+.form-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+
+    &.form-col--end {
+        justify-content: flex-end;
+    }
+
+    &.form-col--100 {
+        width: 100%;
+    }
+
+    &.form-col--65 {
+        width: 65%;
+    }
+
+    &.form-col--60 {
+        width: 60%;
+    }
+
+    &.form-col--50 {
+        width: 50%;
+    }
+
+    &.form-col--40 {
+        width: 40%;
+    }
+
+    &.form-col--35 {
+        width: 35%;
+    }
+
+    &.form-col--33 {
+        width: calc(100% / 3);
+
+        @include media-md{
+            width: 50%;
+        }
+    }
+
+    @include media-sm {
+        width: 100% !important;
+    }
+}
+
+// errors
+.error-msg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-left: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: $danger;
+}
+
+.form-line.error {
+    input,
+    .input-group,
+    .checkbox-group__marker{
+        border-color: $danger !important;
+    }
+
+    .input-group label{
+        color: $danger !important;
+    }
+
+    .error-msg {
+        //display: block;
+    }
+}
+
+
+@import "input";
+
+@import "radio";
+
+@import "checkbox";
+
+@import "select";
+
+@import "switcher";
+
+@import "auth";
+
+@import "file";
+
+@import "slider";

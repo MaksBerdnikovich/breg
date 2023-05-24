@@ -1,0 +1,129 @@
+.userdata{
+    position: relative;
+}
+
+.userdata__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.userdata__block{
+    width: 50%;
+    padding: 0 5px;
+    margin-top: 10px;
+
+    &.block--100{
+        width: 100%;
+    }
+
+    @include media-md{
+        width: 100%;
+    }
+}
+
+.userdata__item{
+    position: relative;
+    display: flex;
+    padding: 55px;
+    align-items: flex-end;
+    border-radius: $corner;
+    white-space: nowrap;
+    background-color: $primary-300;
+    overflow: hidden;
+
+    @include media-md{
+        padding: 30px 15px;
+    }
+
+    @include media-sm{
+        border-radius: 0;
+    }
+
+    @include media-xs{
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: normal;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 150px;
+        width: 120px;
+
+        @include bg-image('db/logo-dark.svg', transparent);
+        background-size: contain;
+        opacity: 0.5;
+        z-index: 0;
+
+        @include media-xs{
+            left: 0 !important;
+        }
+    }
+
+    &.item--start:before{
+        left: 20px;
+    }
+
+    &.item--end:before{
+        right: 20px;
+    }
+
+    &.item--fluid{
+        display: block;
+    }
+
+    & > div{
+        z-index: 1;
+    }
+}
+
+.userdata__item-name{
+    @include dots-leader;
+
+    &:after{
+        @include media-xs{
+            display: none;
+        }
+    }
+}
+
+.userdata__item-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -60px;
+}
+
+.userdata__item-list-block{
+    position: relative;
+    display: flex;
+    width: 50%;
+    padding: 0 60px;
+
+    @include media-mdx {
+        width: 100%;
+
+        & + .userdata__item-list-block {
+            margin-top: 30px;
+        }
+    }
+
+    ul{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        display: flex;
+    }
+
+    li + li{
+        margin-top: 30px;
+    }
+}

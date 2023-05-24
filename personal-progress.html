@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREG</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="BREG">
+    <meta property="og:site_name" content="BREG">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body class="dashboard">
+
+<main class="main-content">
+    <section class="sidebar" data-menu-nav>
+        <div class="sidebar__wrap">
+            <div class="sidebar__logo">
+                <a href="/"><img src="dist/images/logo/logo.svg" width="275" height="72" alt="logo"></a>
+            </div>
+
+            <div class="sidebar__head">
+                <div class="sidebar__menu-toggle" data-menu-toggle><i class="icon-hamburger2"></i></div>
+                <div class="sidebar__user">
+                    <i class="icon-avatar"></i>
+                    <p>
+                        <span class="body-small tx-primary">Добро пожаловать</span>
+                        <span class="title-h6 tx-main">USER_name_3264236523</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="sidebar__stats">
+                <ul class="sidebar__stats-list">
+                    <li class="stats--status">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-status"></i>
+                            <p>
+                                <span class="body-small tx-primary">Активный статус</span>
+                                <span class="title-h6 body-tiny">Партнер</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stats--entry">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-time"></i>
+                            <p>
+                                <span class="body-small tx-primary">Последни вход</span>
+                                <span class="title-h6 body-tiny">22.06.2023 | 23:33</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stats--ip">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-ip"></i>
+                            <p>
+                                <span class="body-small tx-primary">Последни вход c IP</span>
+                                <span class="title-h6 body-tiny">3422.342.43.22</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="icon-menu-1"></i> <span>главная</span></a></li>
+                    <li><a href="top-up-balance.html"><i class="icon-menu-2"></i> <span>пополнить счет</span></a></li>
+                    <li><a href="buy-share.html"><i class="icon-menu-3"></i> <span>приобрести долю</span></a></li>
+                    <li><a href="withdraw.html"><i class="icon-menu-4"></i> <span>забрать дивиденды</span></a></li>
+                    <li><a href="db-partners.html"><i class="icon-menu-5"></i> <span>коллеги</span></a></li>
+                    <li><a href="personal-progress.html" class="active"><i class="icon-menu-6"></i> <span>личный прогресс</span></a></li>
+                    <li><a href="partners-progress.html"><i class="icon-menu-7"></i> <span>прогресс коллег</span></a></li>
+                    <li><a href="verification.html"><i class="icon-menu-8"></i> <span>верификация</span></a></li>
+                    <li><a href="news.html"><i class="icon-menu-9"></i> <span>новости</span></a></li>
+                    <li><a href="settings.html"><i class="icon-menu-10"></i> <span>настройки</span></a></li>
+                    <li><a href="operations.html"><i class="icon-menu-11"></i> <span>Операции</span></a></li>
+                    <li><a href="#"><i class="icon-menu-12"></i> <span>выход</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__menu-toggle" data-menu-toggle><i class="icon-hamburger1"></i></div>
+
+                <div class="header__stats">
+                    <ul class="header__stats-list">
+                        <li class="stats--user">
+                            <div class="header__stats-item">
+                                <i class="icon-avatar"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Добро пожаловать</span>
+                                    <span class="title-h6 tx-main">USER_name_3264236523</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--status">
+                            <div class="header__stats-item">
+                                <i class="icon-status"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Активный статус</span>
+                                    <span class="title-h6 body-tiny">Партнер</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--entry">
+                            <div class="header__stats-item">
+                                <i class="icon-time"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Последни вход</span>
+                                    <span class="title-h6 body-tiny">22.06.2023 | 23:33</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--ip">
+                            <div class="header__stats-item">
+                                <i class="icon-ip"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Последни вход c IP</span>
+                                    <span class="title-h6 body-tiny">3422.342.43.22</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <ul>
+                        <li><a href="top-up-balance.html" class="btn btn--main btn--medium"><span>пополнить счет</span></a></li>
+                        <li><a href="withdraw.html" class="btn btn--primary btn--medium"><span>вывести средства</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="header__lang">
+                    <div class="language">
+                        <a href="javascript:void(0)" class="language__current" data-dropdown-toggle>
+                            <img src="dist/images/flags/1.png" alt="Ru"> <span>Ru</span> <i class="icon-lang-arrow"></i>
+                        </a>
+                        <ul class="language__list" data-dropdown>
+                            <li><a href="#"><i><img src="dist/images/flags/2.png" alt="En"></i> <span>En</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/3.png" alt="Es"></i> <span>Es</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/4.png" alt="Fr"></i> <span>Fr</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/5.png" alt="Po"></i> <span>Po</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/6.png" alt="It"></i> <span>It</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/7.png" alt="Hi"></i> <span>Hi</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__logo">
+                    <a href="dashboard.html"><img src="dist/images/db/logo.svg" width="57" height="72" alt="logo"></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="statistics">
+            <div class="carousel" data-stats-carousel>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ethereum"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-litecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ripple"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tron"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoincash"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tether-trc20"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tether-erc20"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-dogecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ethereum"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-litecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ripple"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="title-area">
+            <h1><i class="icon-menu-6"></i> <span>личный прогресс</span></h1>
+        </section>
+
+        <section class="progress">
+            <div class="progress-step-final" style="background-image: url('dist/images/steps/final.png')">
+                <div class="progress-step-final__title">
+                    <div class="page-title title--center">
+                        <h4>Ступень <span class="tx-primary">7</span></h4>
+                    </div>
+                </div>
+
+                <div class="progress-step-final__wrap">
+                    <div class="progress-step__start">
+                        <div class="progress-step__info">
+                            <div class="progress-step__info-item">
+                                <span class="title-h6 book tx-primary">Дата открытия:</span>
+                                <span class="title-h6">12.06.2023</span>
+                            </div>
+                            <div class="progress-step__info-item mt-10">
+                                <span class="title-h6 book tx-primary">Платежная система:</span>
+                                <span class="title-h6">Perfect Money</span>
+                            </div>
+                            <div class="progress-step__info-item mt-10">
+                                <span class="title-h6 book tx-primary">Сумма доли:</span>
+                                <span class="title-h6">12 000.00 USD</span>
+                            </div>
+                            <div class="progress-step__info-item mt-10">
+                                <span class="title-h6 book tx-primary">Процент начислений:</span>
+                                <span class="title-h6 tx-main">0.7% в сутки</span>
+                            </div>
+                            <div class="progress-step__info-item mt-10">
+                                <span class="title-h6 book tx-primary">След начисление через:</span>
+                                <ul class="timer title-h6" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                    <li class="time hour"><span>00</span></li>
+                                    <li class="sep">:</li>
+                                    <li class="time min"><span>00</span></li>
+                                    <li class="sep">:</li>
+                                    <li class="time sec"><span>00</span></li>
+                                </ul>
+                                <div class="progressbar mt-10" data-time="1000"></div>
+                            </div>
+                            <div class="progress-step__info-item mt-10">
+                                <span class="title-h5 book tx-main">Доступно средств:</span>
+                                <span class="title-h5 styled-subtitle">23 000.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-step__center">
+                        <div class="progress-step__final-info">
+                            <span class="title-h5 styled-subtitle">финальная</span>
+                            <span class="title-h5 styled-subtitle tx-primary">ступень</span>
+                        </div>
+                        <div class="progress-step__btn">
+                            <span>Комиссия за досрочный вывод 1%:</span>
+                            <a href="#" class="btn btn--primary btn--medium"><span>досрочный вывод</span></a>
+                        </div>
+                    </div>
+                    <div class="progress-step__end">
+                        <div class="progress-step__info">
+                            <div class="progress-step__info-item mt-20">
+                                <p class='tx-primary'>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-step">
+                <div class="progress-step__start" style="background-image: url('dist/images/steps/4-1.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">5</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h6 book tx-primary">Дата открытия:</span>
+                            <span class="title-h6">12.06.2023</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Платежная система:</span>
+                            <span class="title-h6">Perfect Money</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Сумма доли:</span>
+                            <span class="title-h6">12 000.00 USD</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Процент начислений:</span>
+                            <span class="title-h6 tx-main">0.7% в сутки</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">След начисление через:</span>
+                            <ul class="timer title-h6" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                <li class="time hour"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time min"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time sec"><span>00</span></li>
+                            </ul>
+                            <div class="progressbar mt-10" data-time="1000"></div>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book tx-main">Доступно средств:</span>
+                            <span class="title-h5 styled-subtitle">23 000.00 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-step__center">
+                    <div class="progress-step__icon"><i class="icon-forarrows"></i></div>
+                    <div class="progress-step__timer">
+                        <span class="title-h6 tx-main book">До след. ступени:</span>
+                        <ul class="timer title-h6 styled-subtitle" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                            <li class="time hour"><span>00</span> <b>часов</b></li>
+                            <li class="sep">:</li>
+                            <li class="time min tx-primary"><span>00</span> <b>мин</b></li>
+                            <li class="sep">:</li>
+                            <li class="time sec tx-primary"><span>00</span> <b>сек</b></li>
+                        </ul>
+                    </div>
+                    <div class="progress-step__btn">
+                        <span>Комиссия за досрочный вывод 10%:</span>
+                        <a href="#" class="btn btn--primary btn--medium"><span>досрочный вывод</span></a>
+                    </div>
+                </div>
+                <div class="progress-step__end" style="background-image: url('dist/images/steps/5.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">6</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-uppercase">30-ый день</span>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-main tx-uppercase">доход 0.8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book">Досрочный вывод: 8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-20">
+                            <p class='tx-primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-step">
+                <div class="progress-step__start" style="background-image: url('dist/images/steps/3-1.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">4</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h6 book tx-primary">Дата открытия:</span>
+                            <span class="title-h6">12.06.2023</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Платежная система:</span>
+                            <span class="title-h6">Perfect Money</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Сумма доли:</span>
+                            <span class="title-h6">12 000.00 USD</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Процент начислений:</span>
+                            <span class="title-h6 tx-main">0.7% в сутки</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">След начисление через:</span>
+                            <ul class="timer title-h6" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                <li class="time hour"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time min"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time sec"><span>00</span></li>
+                            </ul>
+                            <div class="progressbar mt-10" data-time="1000"></div>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book tx-main">Доступно средств:</span>
+                            <span class="title-h5 styled-subtitle">23 000.00 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-step__center">
+                    <div class="progress-step__icon"><i class="icon-forarrows"></i></div>
+                    <div class="progress-step__timer">
+                        <span class="title-h6 tx-main book">До след. ступени:</span>
+                        <ul class="timer title-h6 styled-subtitle" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                            <li class="time hour"><span>00</span> <b>часов</b></li>
+                            <li class="sep">:</li>
+                            <li class="time min tx-primary"><span>00</span> <b>мин</b></li>
+                            <li class="sep">:</li>
+                            <li class="time sec tx-primary"><span>00</span> <b>сек</b></li>
+                        </ul>
+                    </div>
+                    <div class="progress-step__btn">
+                        <span>Комиссия за досрочный вывод 10%:</span>
+                        <a href="#" class="btn btn--primary btn--medium"><span>досрочный вывод</span></a>
+                    </div>
+                </div>
+                <div class="progress-step__end" style="background-image: url('dist/images/steps/4.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">5</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-uppercase">30-ый день</span>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-main tx-uppercase">доход 0.8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book">Досрочный вывод: 8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-20">
+                            <p class='tx-primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-step">
+                <div class="progress-step__start" style="background-image: url('dist/images/steps/2-1.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">3</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h6 book tx-primary">Дата открытия:</span>
+                            <span class="title-h6">12.06.2023</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Платежная система:</span>
+                            <span class="title-h6">Perfect Money</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Сумма доли:</span>
+                            <span class="title-h6">12 000.00 USD</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Процент начислений:</span>
+                            <span class="title-h6 tx-main">0.7% в сутки</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">След начисление через:</span>
+                            <ul class="timer title-h6" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                <li class="time hour"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time min"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time sec"><span>00</span></li>
+                            </ul>
+                            <div class="progressbar mt-10" data-time="1000"></div>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book tx-main">Доступно средств:</span>
+                            <span class="title-h5 styled-subtitle">23 000.00 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-step__center">
+                    <div class="progress-step__icon"><i class="icon-forarrows"></i></div>
+                    <div class="progress-step__timer">
+                        <span class="title-h6 tx-main book">До след. ступени:</span>
+                        <ul class="timer title-h6 styled-subtitle" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                            <li class="time hour"><span>00</span> <b>часов</b></li>
+                            <li class="sep">:</li>
+                            <li class="time min tx-primary"><span>00</span> <b>мин</b></li>
+                            <li class="sep">:</li>
+                            <li class="time sec tx-primary"><span>00</span> <b>сек</b></li>
+                        </ul>
+                    </div>
+                    <div class="progress-step__btn">
+                        <span>Комиссия за досрочный вывод 10%:</span>
+                        <a href="#" class="btn btn--primary btn--medium"><span>досрочный вывод</span></a>
+                    </div>
+                </div>
+                <div class="progress-step__end" style="background-image: url('dist/images/steps/3.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">4</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-uppercase">30-ый день</span>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-main tx-uppercase">доход 0.8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book">Досрочный вывод: 8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-20">
+                            <p class='tx-primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-step">
+                <div class="progress-step__start" style="background-image: url('dist/images/steps/7-1.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">2</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h6 book tx-primary">Дата открытия:</span>
+                            <span class="title-h6">12.06.2023</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Платежная система:</span>
+                            <span class="title-h6">Perfect Money</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Сумма доли:</span>
+                            <span class="title-h6">12 000.00 USD</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Процент начислений:</span>
+                            <span class="title-h6 tx-main">0.7% в сутки</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">След начисление через:</span>
+                            <ul class="timer title-h6" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                <li class="time hour"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time min"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time sec"><span>00</span></li>
+                            </ul>
+                            <div class="progressbar mt-10" data-time="1000"></div>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book tx-main">Доступно средств:</span>
+                            <span class="title-h5 styled-subtitle">23 000.00 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-step__center">
+                    <div class="progress-step__icon"><i class="icon-forarrows"></i></div>
+                    <div class="progress-step__timer">
+                        <span class="title-h6 tx-main book">До след. ступени:</span>
+                        <ul class="timer title-h6 styled-subtitle" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                            <li class="time hour"><span>00</span> <b>часов</b></li>
+                            <li class="sep">:</li>
+                            <li class="time min tx-primary"><span>00</span> <b>мин</b></li>
+                            <li class="sep">:</li>
+                            <li class="time sec tx-primary"><span>00</span> <b>сек</b></li>
+                        </ul>
+                    </div>
+                    <div class="progress-step__btn">
+                        <span>Комиссия за досрочный вывод 10%:</span>
+                        <a href="#" class="btn btn--primary btn--medium"><span>досрочный вывод</span></a>
+                    </div>
+                </div>
+                <div class="progress-step__end" style="background-image: url('dist/images/steps/2.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">3</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-uppercase">30-ый день</span>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-main tx-uppercase">доход 0.8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book">Досрочный вывод: 8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-20">
+                            <p class='tx-primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-step">
+                <div class="progress-step__start" style="background-image: url('dist/images/steps/1.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">1</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h6 book tx-primary">Дата открытия:</span>
+                            <span class="title-h6">12.06.2023</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Платежная система:</span>
+                            <span class="title-h6">Perfect Money</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Сумма доли:</span>
+                            <span class="title-h6">12 000.00 USD</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">Процент начислений:</span>
+                            <span class="title-h6 tx-main">0.7% в сутки</span>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h6 book tx-primary">След начисление через:</span>
+                            <ul class="timer title-h6" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                <li class="time hour"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time min"><span>00</span></li>
+                                <li class="sep">:</li>
+                                <li class="time sec"><span>00</span></li>
+                            </ul>
+                            <div class="progressbar mt-10" data-time="1000"></div>
+                        </div>
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book tx-main">Доступно средств:</span>
+                            <span class="title-h5 styled-subtitle">23 000.00 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-step__center">
+                    <div class="progress-step__icon"><i class="icon-forarrows"></i></div>
+                    <div class="progress-step__timer">
+                        <span class="title-h6 tx-main book">До след. ступени:</span>
+                        <ul class="timer title-h6 styled-subtitle" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                            <li class="time hour"><span>00</span> <b>часов</b></li>
+                            <li class="sep">:</li>
+                            <li class="time min tx-primary"><span>00</span> <b>мин</b></li>
+                            <li class="sep">:</li>
+                            <li class="time sec tx-primary"><span>00</span> <b>сек</b></li>
+                        </ul>
+                    </div>
+                    <div class="progress-step__btn">
+                        <span>Комиссия за досрочный вывод 10%:</span>
+                        <a href="#" class="btn btn--primary btn--medium"><span>досрочный вывод</span></a>
+                    </div>
+                </div>
+                <div class="progress-step__end" style="background-image: url('dist/images/steps/7.png')">
+                    <div class="progress-step__info">
+                        <div class="page-title title--start">
+                            <h4>Ступень <span class="tx-primary">2</span></h4>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-uppercase">30-ый день</span>
+                        </div>
+
+                        <div class="progress-step__info-item">
+                            <span class="title-h4 tx-main tx-uppercase">доход 0.8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-10">
+                            <span class="title-h5 book">Досрочный вывод: 8%</span>
+                        </div>
+
+                        <div class="progress-step__info-item mt-20">
+                            <p class='tx-primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation mt-30">
+                <ul class="navigation__list">
+                    <li class="navigation__item-prev">
+                        <a href="#"><i class="icon-slid-arrow-left"></i></a>
+                    </li>
+                    <li class="navigation__item-curr">
+                        <span class="title-h1">01</span>/<span class="title-h5">02</span>
+                    </li>
+                    <li class="navigation__item-next">
+                        <a href="#"><i class="icon-slid-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__socials">
+                <div class="socials">
+                    <ul class="socials__list">
+                        <li><a href="#"><i class="icon-telegram-plane"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="icon-headset"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p>"Baxess Real Estate Group" all rights reserved © 2023</p>
+            </div>
+        </footer>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

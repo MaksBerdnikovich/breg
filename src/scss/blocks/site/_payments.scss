@@ -1,0 +1,38 @@
+.payments{
+    position: relative;
+    background-color: $primary-300;
+}
+
+.payments__list{
+    position: relative;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px;
+
+        @include media-mdx{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    li{
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    a{
+        display: flex;
+        font-size: 50px;
+        color: $primary;
+
+        @include media-sm{
+            font-size: 36px;
+        }
+
+        @include media-xs{
+            font-size: 30px;
+        }
+    }
+}

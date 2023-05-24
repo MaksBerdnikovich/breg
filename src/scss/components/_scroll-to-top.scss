@@ -1,0 +1,40 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    a{
+        display: flex;
+        min-width: 44px;
+        max-height: 44px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    @include media-lg{
+        right: 15px;
+        bottom: 15px;
+    }
+
+    i{
+        font-size: 26px;
+        margin: 0;
+        transform: rotate(-90deg);
+    }
+
+    &.show{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover{
+        opacity: 0.8;
+    }
+}

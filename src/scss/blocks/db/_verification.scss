@@ -1,0 +1,128 @@
+.verification{
+    position: relative;
+    padding: 50px 30px;
+    margin-top: 10px;
+    background-color: $primary-300;
+    border-radius: $corner;
+    overflow: hidden;
+
+    @include media-sm{
+        border-radius: 0;
+        padding: 25px 15px;
+    }
+}
+
+.verification__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    @include media-lg{
+        flex-direction: column;
+    }
+
+    .page-text{
+        margin-top: 20px;
+    }
+}
+
+.verification__desc{
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+
+    @include media-lg{
+        max-width: none;
+    }
+}
+
+.verification__list{
+    position: relative;
+    flex: 1;
+
+    @include media-lg{
+        width: 100%;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include media-lgx{
+            justify-content: space-between;
+        }
+
+        @include media-xs{
+            justify-content: center;
+        }
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 40px;
+        width: 200px;
+
+        @include media-lgx{
+            margin: 0 15px;
+        }
+
+        @include media-lg{
+            margin-top: 30px;
+        }
+    }
+
+    .title-h6{
+        text-transform: none;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .file-group{
+        position: relative;
+        width: 100%;
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    .file-group input[type=file] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+    .image{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 170px;
+        margin-top: 5px;
+        background-color: $primary-200;
+        border-radius: $corner;
+        overflow: hidden;
+    }
+
+    .btn{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 15px auto 0 auto;
+        cursor: pointer;
+    }
+
+    .btn span{
+        font-size: 12px;
+    }
+}

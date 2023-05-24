@@ -1,0 +1,131 @@
+.settings{
+    position: relative;
+    margin-top: 10px;
+}
+
+.settings__wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings__nav{
+    position: relative;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+    }
+
+    li{
+        width: 25%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+
+        @include media-sm{
+            width: 100%;
+        }
+    }
+}
+
+.settings__nav-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 70px;
+    background-color: $primary-300;
+    @include border-radius($corner, $corner, 0 , 0);
+
+    @include media-sm{
+        @include border-radius(0, 0, 0 , 0);
+    }
+
+    &.active{
+        background-color: $main;
+        color: $primary-300;
+        opacity: 1;
+    }
+}
+
+.settings__block{
+    position: relative;
+    padding: 50px;
+    min-height: 670px;
+    background-color: $primary-300;
+    overflow: hidden;
+    border-radius: $corner;
+
+    @include media-mdx{
+        padding: 30px 15px;
+    }
+
+    @include media-sm{
+        min-height: auto;
+        border-radius: 0;
+    }
+
+    .form{
+        justify-content: center;
+        margin: -30px;
+
+        @include media-mdx{
+            margin: -15px;
+            margin-bottom: 0;
+        }
+    }
+
+    .form-col {
+        padding: 30px;
+
+        @include media-mdx{
+            padding: 15px;
+            width: 50%;
+        }
+    }
+
+    .form-col--100 {
+        padding: 0;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    .form-line{
+        display: flex;
+        align-items: center;
+    }
+
+    .form-line + .form-line{
+        margin-top: 10px;
+    }
+
+    &.block--auth .form-line + .form-line{
+        margin-top: 30px;
+    }
+
+    .form-line .input-icon{
+        min-width: 40px;
+        margin-right: 10px;
+        margin-left: -15px;
+        text-align: center;
+
+        i{
+            font-size: 32px;
+            color: $primary-100;
+        }
+
+        i.icon-mini-btc-cash{
+            font-size: 24px;
+        }
+    }
+
+    .btn-group .btn{
+        min-width: 240px;
+
+        @include media-mdx{
+            margin-top: 15px;
+        }
+    }
+}

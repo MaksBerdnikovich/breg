@@ -1,0 +1,47 @@
+.gallery{
+    position: relative;
+}
+
+.gallery__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+
+    @include media-sm{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.gallery__col{
+    padding: 5px;
+
+    @include media-sm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &.col--30 {
+        width: 30%;
+    }
+
+    &.col--50 {
+        width: 50%;
+    }
+
+    &.col--70{
+        width: 70%;
+    }
+
+    &.col--100 {
+        width: 100%;
+    }
+}
+
+.gallery__item{
+    position: relative;
+    display: flex;
+    border-radius: $corner;
+    overflow: hidden;
+    height: 235px;
+}

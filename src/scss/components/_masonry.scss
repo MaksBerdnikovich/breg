@@ -1,0 +1,16 @@
+.masonry{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -25px;
+}
+
+.masonry-item{
+    width: 50%;
+    padding: 0 25px;
+
+    @include media-md{
+        width: 100%;
+    }
+}

@@ -1,0 +1,142 @@
+.header {
+    position: relative;
+    width: 100%;
+    background-color: $primary-300;
+    border-radius: $corner;
+    z-index: 10;
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.header__wrap{
+    position: relative;
+    min-height: 100px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-sm{
+        padding: 0 15px;
+    }
+}
+
+.header__stats{
+    position: relative;
+}
+
+.header__stats-list{
+    position: relative;
+    display: flex;
+    margin: 0 -25px;
+
+    li{
+        padding: 0 25px;
+
+        @include media-md{
+            display: none;
+        }
+    }
+
+    li:not(.stats--user){
+        @include media-lgx{
+            display: none;
+        }
+    }
+}
+
+.header__stats-item{
+    display: flex;
+    align-items: center;
+
+    i{
+        margin-right: 15px;
+        font-size: 40px;
+        color: $white;
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header__actions{
+    position: relative;
+    margin-left: auto;
+
+    @include media-md{
+        margin: 0 auto;
+    }
+
+    @include media-sm{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+
+    li{
+        padding: 0 8px;
+    }
+
+    .btn{
+        min-width: 180px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn span{
+        font-size: 12px;
+    }
+}
+
+.header__lang{
+    position: relative;
+    margin-left: auto;
+
+    @include media-mdx{
+        display: none;
+    }
+
+    @include media-sm{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.header__logo {
+    display: none;
+    position: relative;
+    margin-left: 40px;
+
+    @include media-lgx{
+        display: block;
+    }
+
+    a{
+        display: flex;
+    }
+}
+
+.header__menu-toggle{
+    display: none;
+    position: relative;
+    margin-right: auto;
+    cursor: pointer;
+    z-index: 10;
+
+    @include media-lgx{
+        display: flex;
+        align-items: center;
+    }
+
+    i{
+        font-size: 20px;
+    }
+}

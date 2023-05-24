@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+    overflow-x: hidden;
+
+    @include scrollbar(4px);
+}
+
+/* SITE
+--------------------------------------------- */
+body.template {
+
+    .main-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        min-height: 100%;
+        padding: 10px;
+        background-color: $bg-main;
+        overflow: hidden;
+
+        @include media-sm{
+            padding: 0;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 360px);
+        margin-left: auto;
+
+        @include media-lgx{
+            width: 100%;
+        }
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+        z-index: 1;
+    }
+
+    /* Blocks Import
+    --------------------------------------------- */
+    @import "site/sections";
+
+    @import "site/sidebar";
+
+    @import "site/header";
+
+    @import "site/footer";
+
+    @import "site/hero";
+
+    @import "site/about";
+
+    @import "site/video";
+
+    @import "site/documents";
+
+    @import "site/plans";
+
+    @import "site/roadmap";
+
+    @import "site/payments";
+
+    @import "site/companies";
+
+    @import "site/partners";
+
+    @import "site/invest";
+
+    @import "site/objects";
+
+    @import "site/map";
+
+    @import "site/advantages";
+
+    @import "site/faq";
+
+    @import "site/request";
+
+    @import "site/contacts";
+
+    @import "site/terms";
+}
+
+
+/* AUTHORIZATION
+--------------------------------------------- */
+body.authorization {
+
+    .main-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        padding: 10px;
+        background-color: $primary-300;
+        overflow: hidden;
+
+        @include media-sm{
+            padding: 0;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+    }
+
+    .wrapper__block{
+        width: 50%;
+        padding: 0 5px;
+
+        @include media-mdx{
+            width: 100%;
+        }
+    }
+
+    /* Blocks Import
+    --------------------------------------------- */
+    @import "auth/header";
+
+    @import "auth/footer";
+
+    @import "auth/signin";
+}
+
+
+/* DASHBOARD
+--------------------------------------------- */
+body.dashboard {
+
+    .main-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        min-height: 100%;
+        padding: 10px;
+        background-color: $bg-main;
+        overflow: hidden;
+
+        @include media-sm{
+            padding: 0;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 360px);
+        margin-left: auto;
+
+        @include media-lgx{
+            width: 100%;
+        }
+    }
+
+    /* Blocks Import
+    --------------------------------------------- */
+    @import "db/sidebar";
+
+    @import "db/header";
+
+    @import "db/footer";
+
+    @import "db/sections";
+
+    @import "db/title-area";
+
+    @import "db/statistics";
+
+    @import "db/userdata";
+
+    @import "db/last-operations";
+
+    @import "db/next-charge";
+
+    @import "db/plans";
+
+    @import "db/invest";
+
+    @import "db/calculator";
+
+    @import "db/sponsor";
+
+    @import "db/referral-link";
+
+    @import "db/status";
+
+    @import "db/status-list";
+
+    @import "db/verification";
+
+    @import "db/news";
+
+    @import "db/settings";
+
+    @import "db/filters";
+
+    @import "db/operations";
+
+    @import "db/partners-progress";
+
+    @import "db/personal-progress";
+}

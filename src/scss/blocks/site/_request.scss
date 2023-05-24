@@ -1,0 +1,33 @@
+.request{
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.request__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+
+    @include media-mdx{
+        flex-direction: column;
+    }
+}
+
+.request__block{
+    position: relative;
+    flex: 1;
+    padding: 0 25px;
+
+    &.block--info{
+        max-width: 540px;
+
+        @include media-mdx{
+            max-width: none;
+            margin-bottom: 30px;
+        }
+    }
+}

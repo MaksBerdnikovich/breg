@@ -1,0 +1,223 @@
+.hero{
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+    background-color: rgba($black, 0.5);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.hero__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+    width: 100%;
+    max-width: 50%;
+    padding: 220px 100px 100px 100px;
+    background-color: rgba($primary-300, .75);
+
+    &.title--fluid > h1{
+        margin-left: -50px;
+
+        @include media-mdx{
+            margin: 0;
+        }
+
+        @include media-md{
+            font-size: 50px;
+        }
+
+        @include media-sm{
+            font-size: 36px;
+        }
+
+        @include media-xs{
+            font-size: 24px;
+        }
+    }
+
+    @include media-mdx{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include media-md{
+        max-width: 65%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @include media-sm{
+        min-height: auto;
+        max-width: none;
+        padding: 120px 15px 60px 15px;
+    }
+}
+
+.hero__title + .hero__socials{
+    top: auto;
+    bottom: 30px;
+    transform: none;
+}
+
+.hero__list{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .owl-nav{
+        left: calc(50% - 150px);
+
+        @include media-md{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @include media-sm{
+            bottom: 10px;
+        }
+    }
+}
+
+.hero__item{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 20px);
+    overflow: hidden;
+
+    @include media-sm{
+        min-height: auto;
+    }
+}
+
+.hero__item-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba($primary-300, .75);
+    z-index: 1;
+
+    @include media-md{
+        width: 65%;
+    }
+
+    @include media-sm{
+        width: 100%;
+    }
+}
+
+.hero__item-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black, 0.5);
+    }
+
+    video{
+        min-width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+}
+
+.hero__item-desc{
+    position: relative;
+    align-self: center;
+    flex: 1;
+    width: 100%;
+    max-width: 50%;
+    padding: 100px;
+    z-index: 2;
+
+    @include media-lgx{
+        padding: 50px;
+    }
+
+    @include media-lg{
+        padding: 30px;
+    }
+
+    @include media-md{
+        padding: 15px;
+        max-width: 65%;
+    }
+
+    @include media-sm{
+        max-width: none;
+        padding: 80px 15px 130px 15px;
+    }
+}
+
+.hero__socials{
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+    @include media-lgx{
+        right: 50px;
+    }
+
+    @include media-md{
+        right: 30px;
+    }
+
+    @include media-sm{
+        display: none;
+    }
+
+    .socials__list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials__list li{
+        margin: 15px 0;
+    }
+}
+
+.hero__item.animate .animate-1,
+.hero__item.animate .animate-2,
+.hero__item.animate .animate-3,
+.hero__item.animate .animate-4,
+.hero__item.animate .animate-5 {
+    transform: translateX(-200%);
+}
+.animate-start .hero__item.animate .animate-1,
+.animate-start .hero__item.animate .animate-2,
+.animate-start .hero__item.animate .animate-3,
+.animate-start .hero__item.animate .animate-4,
+.animate-start .hero__item.animate .animate-5{
+    animation: move3 1s forwards;
+}
+.animate-start .hero__item.animate .animate-1{
+    animation-delay: 0.5s;
+}
+.animate-start .hero__item.animate .animate-2{
+    animation-delay: 1.5s;
+}
+.animate-start .hero__item.animate .animate-3{
+    animation-delay: 1.6s;
+}
+.animate-start .hero__item.animate .animate-4{
+    animation-delay: 1.7s;
+}
+.animate-start .hero__item.animate .animate-5{
+    animation-delay: 1.8s;
+}

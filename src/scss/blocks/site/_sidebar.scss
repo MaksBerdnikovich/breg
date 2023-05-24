@@ -1,0 +1,141 @@
+.sidebar{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 350px;
+    height: calc(100% - 20px);
+
+    @include media-lgx{
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-150%);
+        transition: $transition;
+        z-index: 999;
+
+        &.open{
+            transform: translateX(0);
+        }
+    }
+
+    @include media-xs{
+        width: 100%;
+    }
+}
+
+.sidebar__wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 45px 15px;
+    background-color: $primary-300;
+    border-radius: $corner;
+
+    @include media-lgx{
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        box-shadow: 15px 0px 30px -10px rgba(3, 5, 3, 0.2);
+    }
+
+    @include media-md{
+        padding: 15px;
+    }
+}
+
+.sidebar__logo{
+    position: relative;
+
+    @include media-lgx{
+        display: none;
+    }
+
+    @include media-sm{
+        position: absolute;
+        right: 15px;
+        display: flex;
+    }
+
+    a{
+        display: flex;
+    }
+
+    img{
+        @include media-sm{
+            max-width: 70%;
+            margin-left: auto;
+        }
+    }
+}
+
+.sidebar__nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 100px;
+
+    @include media-lgx{
+        padding: 60px 0;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    li + li{
+        margin-top: 40px;
+    }
+
+    a{
+        position: relative;
+        display: flex;
+
+        @include font-second(19px, 500);
+        color: $white;
+    }
+
+    a:hover{
+        color: $main;
+        opacity: 1;
+    }
+
+    a.active{
+        color: $main;
+
+        @include divider;
+    }
+}
+
+.sidebar__menu-toggle{
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    cursor: pointer;
+    z-index: 10;
+
+    @include media-lgx{
+        display: flex;
+        align-items: center;
+    }
+
+    @include media-md{
+        left: 20px;
+        top: 40px;
+    }
+
+    @include media-sm{
+        top: 30px;
+    }
+
+    i{
+        font-size: 30px;
+    }
+}

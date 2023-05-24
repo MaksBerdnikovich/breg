@@ -1,0 +1,26 @@
+.operations{
+    position: relative;
+    padding: 40px 30px 30px 30px;
+    background-color: $primary-300;
+    border-radius: $corner;
+
+    @include media-mdx{
+        padding: 30px 15px;
+    }
+}
+
+.operations__table{
+    position: relative;
+    width: 100%;
+
+    @include media-mdx{
+        overflow-x: auto;
+        @include scrollbar(2px);
+    }
+
+    table{
+        @include media-mdx{
+            min-width: 1200px;
+        }
+    }
+}

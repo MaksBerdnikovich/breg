@@ -1,0 +1,118 @@
+.btn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    outline: none;
+    transition: $transition;
+    border-radius: $corner-btn;
+    text-align: center;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 3px);
+        z-index: 0;
+        border-radius: $corner-btn;
+        transition: $transition;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: -180px;
+        left: 0;
+        width: 30px;
+        height: 100%;
+        background-color: $white;
+        animation: shiny-btn 3s ease-in-out infinite;
+        z-index: 1;
+    }
+
+    span{
+        z-index: 5;
+    }
+
+    i{
+        margin-right: 10px;
+        margin-top: -3px;
+        z-index: 5;
+    }
+
+    &:disabled:hover{
+        opacity: 1;
+    }
+
+    &:disabled > span{
+        opacity: 0.5;
+    }
+}
+
+.btn--medium{
+    min-height: 33px;
+
+    span {
+        @include font-second(14px, 500);
+        line-height: 33px;
+    }
+}
+
+.btn--large{
+    min-height: 43px;
+
+    span {
+        @include font-second(15px, 500);
+        line-height: 43px;
+    }
+}
+
+.btn--main {
+    background-color: $main-100;
+
+    span, i{
+        color: $white;
+    }
+
+    &:before,
+    &:active:before{
+        background-color: $main;
+    }
+}
+
+.btn--primary {
+    background-color: $primary-100;
+
+    span, i{
+        color: $primary-300;
+    }
+
+    &:before,
+    &:active:before{
+        background-color: $primary;
+    }
+}
+
+@keyframes shiny-btn {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}

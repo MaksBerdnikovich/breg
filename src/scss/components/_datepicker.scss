@@ -1,0 +1,93 @@
+.ui-datepicker{
+    font-family: $font-family-base;
+    background-color: $primary-200;
+    border-color: $primary-200 !important;
+    z-index: 5 !important;
+    margin-top: 5px;
+    width: 18em;
+
+    .ui-widget-header{
+        background-color: rgba(#ffffff, 0.2);
+        border-color: $primary-200 !important;
+        color: $white;
+    }
+
+    .ui-widget-header .ui-datepicker-prev,
+    .ui-widget-header .ui-datepicker-next{
+        background-color: transparent !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:before{
+            font-family: 'icons';
+            font-size: 8px;
+            color: $white;
+            font-weight: normal;
+        }
+    }
+
+    .ui-widget-header .ui-datepicker-prev-hover{
+        border: 0;
+        left: 0px;
+        top: 2px;
+    }
+    .ui-widget-header .ui-datepicker-next-hover{
+        border: 0;
+        right: 0px;
+        top: 2px;
+    }
+
+    .ui-widget-header .ui-datepicker-prev:before{
+        content: "\e902";
+        transform: rotate(90deg);
+    }
+    .ui-widget-header .ui-datepicker-next:before{
+        content: "\e902";
+        transform: rotate(-90deg);
+    }
+
+    .ui-widget-header .ui-datepicker-prev span,
+    .ui-widget-header .ui-datepicker-next span {
+        display: none;
+    }
+
+    .ui-datepicker-calendar {
+        background-color: $primary-200;
+        border-color: $primary-200 !important;
+        color: $white;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button, html .ui-button.ui-state-disabled:hover{
+        line-height: 20px;
+        background-color: $primary-200;
+        border-color: $primary-200 !important;
+        color: $white;
+        text-align: center;
+    }
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active, .ui-button:active,
+    .ui-button.ui-state-active:hover {
+        line-height: 20px;
+        border: 1px solid $main;
+        background: $main;
+        font-weight: normal;
+        color: $white;
+    }
+
+    .ui-state-highlight,
+    .ui-widget-content .ui-state-highlight,
+    .ui-widget-header .ui-state-highlight {
+        line-height: 20px;
+        border: 1px solid $primary;
+        background: $primary;
+        color: $white;
+    }
+}

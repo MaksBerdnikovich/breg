@@ -1,0 +1,120 @@
+.next-charge{
+    position: relative;
+    height: 100%;
+    padding: 25px 10px;
+    background-color: $primary-300;
+    border-radius: $corner;
+    overflow: hidden;
+
+    .page-title{
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.next-charge__list{
+    position: relative;
+    width: 100%;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 56px;
+        line-height: 1;
+        padding: 5px 35px;
+        margin-top: 2px;
+        background-color: $primary-500;
+
+        @include media-mdx{
+            padding: 5px 15px;
+        }
+    }
+
+    span:last-of-type{
+        text-align: right;
+        padding-left: 15px;
+    }
+}
+
+.next-charge__timer{
+    position: relative;
+    min-height: 235px;
+    width: 100%;
+    margin-top: 4px;
+
+    @include bg-image('db/btc.jpg');
+}
+
+.next-charge__timer-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 35px 50px;
+    background-color: rgba($primary-300, 0.9);
+    @include border-radius(0, 0, $corner, $corner);
+
+    @include media-mdx{
+        padding: 30px 15px;
+    }
+
+    @include media-xs{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .icon{
+        width: 76px;
+        height: 76px;
+        font-size: 76px;
+        margin-right: 25px;
+        color: $primary;
+
+        @include media-xs{
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .title-h2{
+            line-height: 0.8;
+        }
+
+        sub{
+            top: 0;
+            font-size: 16px;
+        }
+    }
+
+    .timer{
+        margin-top: 15px;
+
+        li{
+            @include media-xs{
+                text-align: left;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,115 @@
+.input-group {
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    padding: 12px;
+    background-color: $white;
+    border: 1px solid $main;
+    border-radius: $corner-input;
+
+    input, textarea {
+        position: relative;
+        width: 100%;
+        height: 54px;
+        padding: 15px 5px 0 5px;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid $secondary;
+        color: $primary-300;
+        font-size: 19px;
+        line-height: 1.5;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        height: 100%;
+        padding: 15px 5px;
+        min-height: 120px;
+        border: 0;
+    }
+
+    label {
+        position: absolute;
+        pointer-events: none;
+        color: $placeholder;
+        font-size: 19px;
+        font-weight: normal;
+        left: 17px;
+        top: 30px;
+        transition: 0.2s ease;
+    }
+
+    .highlight {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .highlight:before,
+    .highlight:after {
+        content: '';
+        height: 1px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: $main;
+        transition: 0.2s ease all;
+        z-index: 2;
+    }
+
+    .highlight:before {
+        left: 50%;
+    }
+
+    .highlight:after {
+        right: 50%;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: $main;
+    }
+
+    input:focus ~ label,
+    input:valid ~ label{
+        top: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $main;
+    }
+
+    input:focus ~ .highlight:before,
+    input:focus ~ .highlight:after {
+        width: 50%;
+    }
+}
+
+.input-group.captcha {
+
+    input {
+        padding-right: 130px;
+    }
+
+    img{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 110px;
+        height: auto;
+    }
+}
+
+.btn-group{
+    position: relative;
+    margin: auto 0;
+
+    .btn{
+        @include media-xs{
+            width: 100%;
+        }
+    }
+}

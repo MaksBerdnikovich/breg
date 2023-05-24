@@ -1,0 +1,32 @@
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 120px;
+    padding: 10px 15px;
+    margin-top: 10px;
+
+    @include bg-image('db/footer.jpg');
+    border-radius: $corner;
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.footer .socials__list{
+    margin: 0 -15px;
+    justify-content: center;
+
+    li{
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.footer__copy{
+    font-size: 15px;
+}

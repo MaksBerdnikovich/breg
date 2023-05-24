@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREG</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="BREG">
+    <meta property="og:site_name" content="BREG">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body class="dashboard">
+
+<main class="main-content">
+    <section class="sidebar" data-menu-nav>
+        <div class="sidebar__wrap">
+            <div class="sidebar__logo">
+                <a href="/"><img src="dist/images/logo/logo.svg" width="275" height="72" alt="logo"></a>
+            </div>
+
+            <div class="sidebar__head">
+                <div class="sidebar__menu-toggle" data-menu-toggle><i class="icon-hamburger2"></i></div>
+                <div class="sidebar__user">
+                    <i class="icon-avatar"></i>
+                    <p>
+                        <span class="body-small tx-primary">Добро пожаловать</span>
+                        <span class="title-h6 tx-main">USER_name_3264236523</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="sidebar__stats">
+                <ul class="sidebar__stats-list">
+                    <li class="stats--status">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-status"></i>
+                            <p>
+                                <span class="body-small tx-primary">Активный статус</span>
+                                <span class="title-h6 body-tiny">Партнер</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stats--entry">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-time"></i>
+                            <p>
+                                <span class="body-small tx-primary">Последни вход</span>
+                                <span class="title-h6 body-tiny">22.06.2023 | 23:33</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stats--ip">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-ip"></i>
+                            <p>
+                                <span class="body-small tx-primary">Последни вход c IP</span>
+                                <span class="title-h6 body-tiny">3422.342.43.22</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="icon-menu-1"></i> <span>главная</span></a></li>
+                    <li><a href="top-up-balance.html" class="active"><i class="icon-menu-2"></i> <span>пополнить счет</span></a></li>
+                    <li><a href="buy-share.html"><i class="icon-menu-3"></i> <span>приобрести долю</span></a></li>
+                    <li><a href="withdraw.html"><i class="icon-menu-4"></i> <span>забрать дивиденды</span></a></li>
+                    <li><a href="db-partners.html"><i class="icon-menu-5"></i> <span>коллеги</span></a></li>
+                    <li><a href="personal-progress.html"><i class="icon-menu-6"></i> <span>личный прогресс</span></a></li>
+                    <li><a href="partners-progress.html"><i class="icon-menu-7"></i> <span>прогресс коллег</span></a></li>
+                    <li><a href="verification.html"><i class="icon-menu-8"></i> <span>верификация</span></a></li>
+                    <li><a href="news.html"><i class="icon-menu-9"></i> <span>новости</span></a></li>
+                    <li><a href="settings.html"><i class="icon-menu-10"></i> <span>настройки</span></a></li>
+                    <li><a href="operations.html"><i class="icon-menu-11"></i> <span>Операции</span></a></li>
+                    <li><a href="#"><i class="icon-menu-12"></i> <span>выход</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__menu-toggle" data-menu-toggle><i class="icon-hamburger1"></i></div>
+
+                <div class="header__stats">
+                    <ul class="header__stats-list">
+                        <li class="stats--user">
+                            <div class="header__stats-item">
+                                <i class="icon-avatar"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Добро пожаловать</span>
+                                    <span class="title-h6 tx-main">USER_name_3264236523</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--status">
+                            <div class="header__stats-item">
+                                <i class="icon-status"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Активный статус</span>
+                                    <span class="title-h6 body-tiny">Партнер</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--entry">
+                            <div class="header__stats-item">
+                                <i class="icon-time"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Последни вход</span>
+                                    <span class="title-h6 body-tiny">22.06.2023 | 23:33</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--ip">
+                            <div class="header__stats-item">
+                                <i class="icon-ip"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Последни вход c IP</span>
+                                    <span class="title-h6 body-tiny">3422.342.43.22</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <ul>
+                        <li><a href="top-up-balance.html" class="btn btn--main btn--medium"><span>пополнить счет</span></a></li>
+                        <li><a href="withdraw.html" class="btn btn--primary btn--medium"><span>вывести средства</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="header__lang">
+                    <div class="language">
+                        <a href="javascript:void(0)" class="language__current" data-dropdown-toggle>
+                            <img src="dist/images/flags/1.png" alt="Ru"> <span>Ru</span> <i class="icon-lang-arrow"></i>
+                        </a>
+                        <ul class="language__list" data-dropdown>
+                            <li><a href="#"><i><img src="dist/images/flags/2.png" alt="En"></i> <span>En</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/3.png" alt="Es"></i> <span>Es</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/4.png" alt="Fr"></i> <span>Fr</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/5.png" alt="Po"></i> <span>Po</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/6.png" alt="It"></i> <span>It</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/7.png" alt="Hi"></i> <span>Hi</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__logo">
+                    <a href="dashboard.html"><img src="dist/images/db/logo.svg" width="57" height="72" alt="logo"></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="statistics">
+            <div class="carousel" data-stats-carousel>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ethereum"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-litecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ripple"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tron"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoincash"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tether-trc20"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tether-erc20"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-dogecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ethereum"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-litecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ripple"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="title-area">
+            <h1><i class="icon-menu-2"></i> <span>Пополнить счет</span></h1>
+        </section>
+
+        <section class="calculator">
+            <form id="topUpBalanceForm" class="calculator__wrap" action="?" method="post">
+                <div class="calculator__block">
+                    <div class="calculator__item item--system">
+                        <div class="page-title title--start">
+                            <h4>Платежная <span class="tx-primary">система</span></h4>
+                        </div>
+
+                        <div class="calculator__systems">
+                            <ul>
+                                <li>
+                                    <input id="currency-1" type="radio" name="currency" value="50000" data-currency="btc" data-percent="0.1">
+                                    <label class="calculator__systems-item" for="currency-1">
+                                        <div class="icon"><i class="icon-bitcoin"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-2" type="radio" name="currency" value="50000" data-currency="eth" data-percent="0.2">
+                                    <label class="calculator__systems-item" for="currency-2">
+                                        <div class="icon"><i class="icon-ethereum"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-3" type="radio" name="currency" value="50000" data-currency="ltc" data-percent="0.3">
+                                    <label class="calculator__systems-item" for="currency-3">
+                                        <div class="icon"><i class="icon-litecoin"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-4" type="radio" name="currency" value="50000" data-currency="rip" data-percent="0.4">
+                                    <label class="calculator__systems-item" for="currency-4">
+                                        <div class="icon"><i class="icon-ripple"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-5" type="radio" name="currency" value="50000" data-currency="trn" data-percent="0.5">
+                                    <label class="calculator__systems-item" for="currency-5">
+                                        <div class="icon"><i class="icon-tron"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-6" type="radio" name="currency" value="50000" data-currency="btcash" data-percent="0.6">
+                                    <label class="calculator__systems-item" for="currency-6">
+                                        <div class="icon"><i class="icon-bitcoincash"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-7" type="radio" name="currency" value="50000" data-currency="erc20" data-percent="0.7">
+                                    <label class="calculator__systems-item" for="currency-7">
+                                        <div class="icon"><i class="icon-tether-erc20"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="currency-8" type="radio" name="currency" value="50000" data-currency="trc20" data-percent="0.8">
+                                    <label class="calculator__systems-item" for="currency-8">
+                                        <div class="icon"><i class="icon-tether-trc20"></i></div>
+                                        <div class="price">
+                                            <span class="body-small tx-primary">Баланс</span>
+                                            <span class="title-h6 body-small">50 000.00 BTC</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__block">
+                    <div class="calculator__item item--amount">
+                        <div class="page-title title--start">
+                            <h4>сумма <span class="tx-primary">пополнения</span></h4>
+                        </div>
+
+                        <div class="calculator__amount">
+                            <div class="input-group">
+                                <input type="text" name="amount" data-calc-amount required>
+                                <label>Сумма</label>
+                                <span class="highlight"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__item item--result">
+                        <div class="calculator__result">
+                            <div class="calculator__result-title">
+                                <span class="tx-primary">Будет пополнено с учетом комиссии:</span>
+                            </div>
+                            <div class="calculator__result-amount">
+                                <span class="title-h4" data-calc-total>-</span>
+                            </div>
+                            <div class="calculator__result-submit">
+                                <button type="submit" class="btn btn--main btn--large" data-calc-submit>
+                                    <span>пополнить</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__socials">
+                <div class="socials">
+                    <ul class="socials__list">
+                        <li><a href="#"><i class="icon-telegram-plane"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="icon-headset"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p>"Baxess Real Estate Group" all rights reserved © 2023</p>
+            </div>
+        </footer>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+<!-- Calculator  -->
+<script>
+    const amountCheck = (val, balance) => {
+        if (!val || val <= 0 || val > balance){
+            $('[data-calc-amount]').addClass('error').next('.error-text').show()
+            $('[data-calc-submit]').attr('disabled', true)
+        } else {
+            $('[data-calc-amount]').removeClass('error').next('.error-text').hide()
+            $('[data-calc-submit]').attr('disabled', false)
+        }
+    }
+
+    const calcTotalProfit = (amount, percent, currency) => {
+        const result = parseFloat(amount) - ((parseFloat(amount) / 100 * parseFloat(percent)))
+        if (result && result > 0){
+            $('[data-calc-total]').html(`${result.toFixed(2)} ${currency}`)
+        } else {
+            $('[data-calc-total]').html(`-`)
+        }
+    }
+
+    const calculate = (
+        amount = $('[data-calc-amount]').val(),
+        balance = $('input[name="currency"]:checked').val(),
+        percent = $('input[name="currency"]:checked').data('percent'),
+        currency = $('input[name="currency"]:checked').data('currency'),
+    ) => {
+        amountCheck(amount, balance)
+        calcTotalProfit(amount, percent, currency)
+    }
+    calculate()
+
+    // change currency
+    $('input[name="currency"]').on('change', () => {
+        const balance = $('input[name="currency"]:checked').val()
+        $('[data-calc-amount]').val(balance)
+        const amount = $('[data-calc-amount]').val()
+
+        calculate(amount, balance)
+    })
+
+    // change amount
+    $('[data-calc-amount]').on('keyup', (e) => {
+        const amount = parseFloat($(e.target).val())
+        const balance = parseFloat($('input[name="currency"]:checked').val())
+
+        amountCheck(amount, balance)
+        if (amount > 0 && amount <= balance) calculate(amount, balance)
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREG</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="BREG">
+    <meta property="og:site_name" content="BREG">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body class="dashboard">
+
+<main class="main-content">
+    <section class="sidebar" data-menu-nav>
+        <div class="sidebar__wrap">
+            <div class="sidebar__logo">
+                <a href="/"><img src="dist/images/logo/logo.svg" width="275" height="72" alt="logo"></a>
+            </div>
+
+            <div class="sidebar__head">
+                <div class="sidebar__menu-toggle" data-menu-toggle><i class="icon-hamburger2"></i></div>
+                <div class="sidebar__user">
+                    <i class="icon-avatar"></i>
+                    <p>
+                        <span class="body-small tx-primary">Добро пожаловать</span>
+                        <span class="title-h6 tx-main">USER_name_3264236523</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="sidebar__stats">
+                <ul class="sidebar__stats-list">
+                    <li class="stats--status">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-status"></i>
+                            <p>
+                                <span class="body-small tx-primary">Активный статус</span>
+                                <span class="title-h6 body-tiny">Партнер</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stats--entry">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-time"></i>
+                            <p>
+                                <span class="body-small tx-primary">Последни вход</span>
+                                <span class="title-h6 body-tiny">22.06.2023 | 23:33</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stats--ip">
+                        <div class="sidebar__stats-item">
+                            <i class="icon-ip"></i>
+                            <p>
+                                <span class="body-small tx-primary">Последни вход c IP</span>
+                                <span class="title-h6 body-tiny">3422.342.43.22</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__nav">
+                <ul>
+                    <li><a href="dashboard.html" class="active"><i class="icon-menu-1"></i> <span>главная</span></a></li>
+                    <li><a href="top-up-balance.html"><i class="icon-menu-2"></i> <span>пополнить счет</span></a></li>
+                    <li><a href="buy-share.html"><i class="icon-menu-3"></i> <span>приобрести долю</span></a></li>
+                    <li><a href="withdraw.html"><i class="icon-menu-4"></i> <span>забрать дивиденды</span></a></li>
+                    <li><a href="db-partners.html"><i class="icon-menu-5"></i> <span>коллеги</span></a></li>
+                    <li><a href="personal-progress.html"><i class="icon-menu-6"></i> <span>личный прогресс</span></a></li>
+                    <li><a href="partners-progress.html"><i class="icon-menu-7"></i> <span>прогресс коллег</span></a></li>
+                    <li><a href="verification.html"><i class="icon-menu-8"></i> <span>верификация</span></a></li>
+                    <li><a href="news.html"><i class="icon-menu-9"></i> <span>новости</span></a></li>
+                    <li><a href="settings.html"><i class="icon-menu-10"></i> <span>настройки</span></a></li>
+                    <li><a href="operations.html"><i class="icon-menu-11"></i> <span>Операции</span></a></li>
+                    <li><a href="#"><i class="icon-menu-12"></i> <span>выход</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__menu-toggle" data-menu-toggle><i class="icon-hamburger1"></i></div>
+
+                <div class="header__stats">
+                    <ul class="header__stats-list">
+                        <li class="stats--user">
+                            <div class="header__stats-item">
+                                <i class="icon-avatar"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Добро пожаловать</span>
+                                    <span class="title-h6 tx-main">USER_name_3264236523</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--status">
+                            <div class="header__stats-item">
+                                <i class="icon-status"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Активный статус</span>
+                                    <span class="title-h6 body-tiny">Партнер</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--entry">
+                            <div class="header__stats-item">
+                                <i class="icon-time"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Последни вход</span>
+                                    <span class="title-h6 body-tiny">22.06.2023 | 23:33</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="stats--ip">
+                            <div class="header__stats-item">
+                                <i class="icon-ip"></i>
+                                <p>
+                                    <span class="body-small tx-primary">Последни вход c IP</span>
+                                    <span class="title-h6 body-tiny">3422.342.43.22</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <ul>
+                        <li><a href="top-up-balance.html" class="btn btn--main btn--medium"><span>пополнить счет</span></a></li>
+                        <li><a href="withdraw.html" class="btn btn--primary btn--medium"><span>вывести средства</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="header__lang">
+                    <div class="language">
+                        <a href="javascript:void(0)" class="language__current" data-dropdown-toggle>
+                            <img src="dist/images/flags/1.png" alt="Ru"> <span>Ru</span> <i class="icon-lang-arrow"></i>
+                        </a>
+                        <ul class="language__list" data-dropdown>
+                            <li><a href="#"><i><img src="dist/images/flags/2.png" alt="En"></i> <span>En</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/3.png" alt="Es"></i> <span>Es</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/4.png" alt="Fr"></i> <span>Fr</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/5.png" alt="Po"></i> <span>Po</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/6.png" alt="It"></i> <span>It</span></a></li>
+                            <li><a href="#"><i><img src="dist/images/flags/7.png" alt="Hi"></i> <span>Hi</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__logo">
+                    <a href="dashboard.html"><img src="dist/images/db/logo.svg" width="57" height="72" alt="logo"></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="statistics">
+            <div class="carousel" data-stats-carousel>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ethereum"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-litecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ripple"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tron"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoincash"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tether-trc20"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-tether-erc20"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-dogecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-bitcoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ethereum"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-litecoin"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="statistics__item">
+                        <div class="statistics__icon"><i class="icon-ripple"></i></div>
+
+                        <div class="statistics__list">
+                            <ul>
+                                <li>
+                                    <span class="body-small tx-primary">Пополнено</span>
+                                    <span class="title-h6 body-small tx-main">50 000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Выведено</span>
+                                    <span class="title-h6 body-small tx-white">5000.00 BTC</span>
+                                </li>
+                                <li>
+                                    <span class="body-small tx-primary">Занято</span>
+                                    <span class="title-h6 body-small tx-primary-100">3000.00 BTC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="title-area">
+            <h1><i class="icon-menu-1"></i> <span>главная</span></h1>
+        </section>
+
+        <section class="userdata">
+            <div class="userdata__wrap">
+                <div class="userdata__block">
+                    <div class="userdata__item item--start">
+                        <div class="userdata__item-name">
+                            <span class="title-h6 book tx-primary">Ваши активы:</span>
+                        </div>
+                        <div class="userdata__item-value">
+                            <span class="title-h6 book tx-main">234 875.63 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdata__block">
+                    <div class="userdata__item item--end">
+                        <div class="userdata__item-name">
+                            <span class="title-h6 book tx-primary">всего заработано</span>
+                        </div>
+                        <div class="userdata__item-value">
+                            <span class="title-h6 book tx-main">234 875.63 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdata__block">
+                    <div class="userdata__item item--end">
+                        <div class="userdata__item-name">
+                            <span class="title-h6 book tx-primary">кол-во всего партнеров</span>
+                        </div>
+                        <div class="userdata__item-value">
+                            <span class="title-h6 book tx-main">234 875</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdata__block">
+                    <div class="userdata__item item--start">
+                        <div class="userdata__item-name">
+                            <span class="title-h6 book tx-primary">кол-во активных партнеров</span>
+                        </div>
+                        <div class="userdata__item-value">
+                            <span class="title-h6 book tx-main">234 875</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdata__block">
+                    <div class="userdata__item item--start">
+                        <div class="userdata__item-name">
+                            <span class="title-h6 book tx-primary">оборот структуры</span>
+                        </div>
+                        <div class="userdata__item-value">
+                            <span class="title-h6 book tx-main">234 875.63 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdata__block">
+                    <div class="userdata__item item--end">
+                        <div class="userdata__item-name">
+                            <span class="title-h6 book tx-primary">заработано реферальных</span>
+                        </div>
+                        <div class="userdata__item-value">
+                            <span class="title-h6 book tx-main">234 875.63 USD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="db-section">
+            <div class="db-section__wrap">
+                <div class="db-section__block">
+                    <div class="last-operations">
+                        <div class="page-title title--start">
+                            <h4>Последние <span class="tx-primary">операции</span></h4>
+                        </div>
+
+                        <div class="last-operations__table">
+                            <table class="db-table">
+                                <tbody>
+                                <tr>
+                                    <td class="td--operation">Пополнение</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-btc"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">Вывод</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-eth"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">Открытие депозита</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-ltc"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">рефские</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-rip"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">Пополнение</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-trx"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">Вывод</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-btc-cash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">Открытие депозита</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-trc20"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">рефские</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-erc20"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">рефские</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-doge"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td--operation">Пополнение</td>
+                                    <td class="td--date tx-primary">23.08,2023 | 23:45</td>
+                                    <td class="td--price tx-main">234 875.63 USD</td>
+                                    <td class="th--eps"><i class="icon-mini-btc"></i></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="db-section__block">
+                    <div class="next-charge">
+                        <div class="page-title title--start">
+                            <h4>ближайшее <span class="tx-primary">начисление</span></h4>
+                        </div>
+
+                        <div class="next-charge__list">
+                            <ul>
+                                <li>
+                                    <span class="title-h6">инвестировано</span>
+                                    <span class="title-h6 tx-main">234 875.63 USD</span>
+                                </li>
+                                <li>
+                                    <span class="title-h6">заработано</span>
+                                    <span class="title-h6 tx-main">234 875.63 USD</span>
+                                </li>
+                                <li>
+                                    <span class="title-h6">выведено</span>
+                                    <span class="title-h6 tx-main">234 875.63 USD</span>
+                                </li>
+                                <li>
+                                    <span class="title-h6">Заработано реферальных</span>
+                                    <span class="title-h6 tx-main">234 875.63 USD</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="next-charge__timer">
+                            <div class="next-charge__timer-wrap">
+                                <div class="icon"><i class="icon-time2"></i></div>
+                                <div class="desc">
+                                    <span class="title-h6 tx-primary">Ближайшее начисление через</span>
+                                    <ul class="timer title-h2" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                        <li class="time hour"><span>00</span> <sub>часов</sub></li>
+                                        <li class="time min"><span>00</span> <sub>мин</sub></li>
+                                        <li class="time sec"><span>00</span> <sub>сек</sub></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__socials">
+                <div class="socials">
+                    <ul class="socials__list">
+                        <li><a href="#"><i class="icon-telegram-plane"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="icon-headset"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p>"Baxess Real Estate Group" all rights reserved © 2023</p>
+            </div>
+        </footer>
+    </section>
+</main>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

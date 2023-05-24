@@ -1,0 +1,268 @@
+.sidebar{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 350px;
+    padding: 45px 15px;
+    height: calc(100% - 20px);
+    background-color: $primary-300;
+    border-radius: $corner;
+    overflow: hidden;
+
+    @include media-lgx{
+        position: absolute;
+        width: 100%;
+        max-width: 685px;
+        height: auto;
+        padding: 0 25px 60px 25px;
+        transform: translateX(-150%);
+        transition: $transition;
+        z-index: 999;
+        box-shadow: 10px 5px 25px -10px rgba(3, 5, 3, 0.5);
+
+        &.open{
+            transform: translateX(0);
+        }
+    }
+
+    @include media-sm{
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 0 15px;
+    }
+}
+
+.sidebar__wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    @include scrollbar(2px);
+}
+
+.sidebar__logo{
+    position: relative;
+
+    @include media-lgx{
+        display: none;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.sidebar__nav{
+    position: relative;
+    margin-top: 70px;
+    min-height: 750px;
+
+    @include media-lgx{
+        min-height: auto;
+        margin-top: 100px;
+    }
+
+    @include media-sm{
+        margin-top: 50px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+
+        @include media-lgx{
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+    }
+
+    li{
+        @include media-lgx{
+            width: 50%;
+            padding: 0 5px;
+        }
+    }
+
+    a{
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+
+        @include font-second(16px, 600);
+        color: $white;
+
+        @include media-sm{
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        @include media-xs{
+            font-size: 12px;
+        }
+    }
+
+    i {
+        min-width: 45px;
+        margin-top: -5px;
+        text-align: center;
+        color: $primary-100;
+        font-size: 18px;
+        transition: $transition;
+    }
+
+    a:hover,
+    a:hover > i{
+        color: $main;
+        opacity: 1;
+    }
+
+    a.active,
+    a.active > i{
+        color: $main;
+    }
+
+    a.active:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 55px;
+        height: 3px;
+        background-color: $main;
+        left: 45px;
+
+        @include media-xs{
+            width: 40px;
+            height: 2px;
+        }
+    }
+}
+
+.sidebar__head{
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    padding: 10px 30px;
+
+    @include media-lgx{
+        display: flex;
+    }
+
+    @include media-xs{
+        padding: 0 0 0 50px;
+        justify-content: flex-start;
+    }
+}
+
+.sidebar__user{
+    display: flex;
+    align-items: center;
+
+    i{
+        margin-right: 15px;
+        font-size: 40px;
+        color: $white;
+
+        @include media-xs{
+            display: none;
+        }
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-h6{
+        @include media-xs{
+            font-size: 14px;
+        }
+    }
+}
+
+.sidebar__menu-toggle{
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+
+    @include media-lgx{
+        display: flex;
+        align-items: center;
+    }
+
+    @include media-sm{
+        left: 0;
+    }
+
+    i{
+        font-size: 30px;
+    }
+}
+
+.sidebar__stats{
+    position: relative;
+    display: none;
+    margin-top: 20px;
+
+    @include media-lgx{
+        display: block;
+    }
+}
+
+.sidebar__stats-list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: -15px;
+
+    @include media-xs{
+        flex-wrap: wrap;
+    }
+
+    li{
+        padding: 15px;
+    }
+}
+
+.sidebar__stats-item{
+    display: flex;
+    align-items: center;
+
+    @include media-sm{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    i{
+        margin-right: 15px;
+        font-size: 40px;
+        color: $white;
+
+        @include media-sm{
+            margin: 0 0 10px 0;
+        }
+
+        @include media-xs{
+            font-size: 30px;
+        }
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+    }
+}

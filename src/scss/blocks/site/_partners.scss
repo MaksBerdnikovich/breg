@@ -1,0 +1,141 @@
+.partners{
+    position: relative;
+}
+
+.partners__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.partners__block{
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 0 5px;
+
+    @include media-md{
+        width: 100%;
+    }
+
+    &.block--highlight{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.partners__item{
+    position: relative;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-300;
+    border-radius: $corner;
+    overflow: hidden;
+
+    @include media-sm{
+        border-radius: 0;
+    }
+}
+
+.partners__item-caption{
+    position: absolute;
+    top: 15px;
+    left: -15px;
+
+    .title-giant{
+        opacity: 0.02;
+    }
+}
+
+.partners__item-person{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.partners__block.block--status-1 .partners__item-person{
+    top: -15px;
+    right: -80px;
+}
+.partners__block.block--status-2 .partners__item-person,
+.partners__block.block--status-3 .partners__item-person,
+.partners__block.block--status-4 .partners__item-person,
+.partners__block.block--status-6 .partners__item-person{
+    top: -15px;
+    right: -20px;
+}
+
+.partners__block.block--status-5 .partners__item-person{
+    top: 15px;
+    right: -20px;
+}
+
+.partners__item-desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    min-height: 265px;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, rgba($primary-200, 0.9) 55%, rgba($black, 0));
+
+    @include media-md{
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .page-title{
+        margin-bottom: 30px;
+    }
+
+    .page-text p + p{
+        margin-top: 10px;
+    }
+
+    .styled-subtitle{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .title-h4{
+        max-width: 480px;
+        font-weight: 700;
+    }
+}
+
+.partners__block.block--highlight .partners__item{
+    background-color: transparent;
+    @include bg-image('partners/status2.jpg')
+}
+
+.partners__block.block--highlight .partners__item-caption{
+    left: -30px;
+
+    .title-giant{
+        font-size: 120px;
+        opacity: 0.3;
+        color: $white
+    }
+
+    .title-giant span{
+        color: $white;
+    }
+}
+
+.partners__block.block--highlight .partners__item-desc{
+    width: 100%;
+    max-width: 50%;
+    margin: auto auto 0 auto;
+    text-align: center;
+
+    @include media-mdx{
+        max-width: none;
+    }
+
+    .title-h4{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

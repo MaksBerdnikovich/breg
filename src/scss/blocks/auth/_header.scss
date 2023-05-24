@@ -1,0 +1,22 @@
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 10px 50px;
+    width: 50%;
+    margin-right: auto;
+    z-index: 5;
+
+    @include media-mdx{
+        width: 100%;
+        min-height: auto;
+        padding: 5px 15px 15px 15px;
+    }
+
+    .header__lang{
+        margin-left: 15px;
+    }
+}

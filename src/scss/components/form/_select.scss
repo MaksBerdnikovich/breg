@@ -1,0 +1,147 @@
+.select-group{
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    padding: 12px;
+    background-color: $white;
+    border: 1px solid $main;
+    border-radius: $corner-input;
+
+    label{
+        position: absolute;
+        pointer-events: none;
+        top: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $main;
+    }
+
+    .selectric-wrapper{
+        position: relative;
+        width: 100%;
+    }
+
+    .selectric{
+        position: relative;
+        width: 100%;
+        height: 54px;
+        padding: 15px 5px 0 5px;
+        outline: none;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $secondary;
+        color: $primary-300;
+        font-size: 19px;
+        line-height: 1.5;
+
+        .label{
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex: 1 1 auto;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            color: $primary-300;
+            font-size: 19px;
+            font-weight: normal;
+            user-select: none;
+            border: 0;
+        }
+
+        .button{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 0;
+            width: auto;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            text-align: center;
+            font: inherit;
+            font-size: 0;
+            text-indent: -9999;
+
+            &:after{
+                display: none;
+            }
+
+            &:before {
+                content: "\e902";
+                font-family: 'icons';
+                font-size: 8px;
+                transition: transform 0.2s ease-in-out;
+                color: $main;
+            }
+        }
+    }
+
+    .selectric-open .selectric .button {
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+
+    .selectric-items {
+        display: none;
+        position: absolute;
+        min-width: calc(100% + 24px);
+        top: calc(100% + 20px);
+        left: -12px;
+        outline: none;
+        background-color: transparent;
+        border-radius: $corner-input;
+        border: 1px solid $main;
+        color: $primary-300;
+        z-index: -1;
+        box-shadow: none;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            max-height: 200px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            box-shadow: $shadow-styled;
+            background: $white;
+            border-radius: $corner-input;
+
+            @include scrollbar(2px);
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 54px;
+            padding: 5px 17px;
+            outline: none;
+            background-color: transparent;
+            border: 0;
+            color: $primary-300;
+            font-size: 16px;
+
+            &:hover {
+                background-color: rgba($primary, 0.2);
+            }
+
+            &.highlighted{
+                background-color: $main;
+            }
+        }
+
+        .selectric-scroll{
+            overflow: visible;
+        }
+    }
+
+    .selectric-open .selectric-items {
+        width: 100% !important;
+        display: block;
+    }
+}

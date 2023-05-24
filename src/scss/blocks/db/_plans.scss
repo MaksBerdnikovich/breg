@@ -1,0 +1,58 @@
+.plans{
+    position: relative;
+    border-radius: $corner;
+    overflow: hidden;
+    @include bg-image('bg/plans-invest.jpg');
+}
+
+.plans__wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+
+    @include media-lg{
+        padding: 30px;
+    }
+
+    @include media-md{
+        padding: 30px 15px;
+    }
+}
+
+.plans__desc{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -40px;
+
+    @include media-lg{
+        margin: 0 -15px;
+    }
+}
+
+.plans__desc-block{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 40px;
+    margin-top: 40px;
+
+    @include media-lg{
+        padding: 0 15px;
+    }
+
+    @include media-md{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .page-text p{
+        line-height: 1.7;
+    }
+
+    .styled-list li{
+        margin: 0;
+        line-height: 1.7;
+    }
+}

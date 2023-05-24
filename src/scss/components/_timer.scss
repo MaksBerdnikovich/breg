@@ -1,0 +1,14 @@
+.timer{
+    position: relative;
+    display: flex;
+
+    li{
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    span{
+        display: inline-flex;
+        width: 45px;
+    }
+}
